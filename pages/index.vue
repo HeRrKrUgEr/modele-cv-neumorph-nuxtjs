@@ -18,6 +18,7 @@
               </div>
             </div>
 
+
             <div>             
               <p class="mb-2 text-xl ml-1">
                 <fa
@@ -27,23 +28,25 @@
                 ><span class="text-sm font-semibold">Développeur Full-Stack</span>
               </p>
               <p class="mb-2 text-xl ml-1">
-                <fa :icon="['fal', 'home']" class="fa-fw  mr-3 text-cv-500"></fa
-                ><span class="leading-tight"><span class="text-sm">Nancy / Strasbourg</span></span>
+                <fa :icon="['fal', 'home']" class="fa-fw mr-3 text-cv-500"></fa
+                ><span class="text-sm">Nancy / Strasbourg</span>
               </p>
               <p class="mb-2 text-xl ml-1">
                 <fa
                   :icon="['fal', 'envelope']"
                   class="fa-fw  mr-3 text-cv-500 "
                 ></fa
-                ><a href="mailto:vchanliau@gmail.com" class="leading-tight"><span class="text-sm">vchanliau@gmail.com</span></a>
+                ><a href="mailto:vchanliau@gmail.com" class="text-sm">vchanliau@gmail.com</a>
               </p>
+
+
               <p class="mb-3 text-xl ml-1">
                  <fa
                   :icon="['fal', 'phone-rotary']"
                   class="fa-fw  mr-3 text-cv-500 "
                 ></fa
                 ></i
-                ><a href="tel:+33611826310"><span class="text-sm">06.11.82.63.10</span></a>
+                ><a href="tel:+33611826310" class="text-sm">06.11.82.63.10</a>
               </p>
 
               <a class="button-download mb-3 mx-4" href="cv-vincentchanliau-2021.pdf">
