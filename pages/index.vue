@@ -231,7 +231,7 @@ export default {}
 }
 
 .title{
-      box-shadow: inset -2px 1px 4px rgba(0,0,0,0.4);
+          box-shadow: inset -1px 1px 3px rgba(0,0,0,0.4);
     clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);
 }
 
