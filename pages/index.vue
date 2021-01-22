@@ -45,15 +45,77 @@
                 ></i
                 ><a href="tel:+33611826310"><span class="text-sm">06.11.82.63.10</span></a>
               </p>
-              <hr />
-           
+              <hr/>
 
-              <p class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-4 mx-1">
+              <p class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1">
+                <fa
+                  :icon="['fal', 'cog']"
+                  class="fa-fw mr-3"
+                ></fa
+                ><span class="text-lg">Compétences techniques</span>
+              </p>
+
+
+              <p class="mt-4 text-base mb-1 font-light">.NET / .NET Core <span class="text-xs italic">(ASP.NET, C#, WebServices...)</span></p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
+                >100%</div>
+              </div>
+
+              <p class="mt-4 text-base mb-1 font-light">Javascript <span class="text-xs italic">(NodeJS, VueJS, React, PWA...)</span></p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
+                >90%</div>
+              </div>
+
+             
+
+              <p class="mt-4 text-base mb-1 font-light">Bases de Données <span class="text-xs italic">(SQLServer, MySql, MongoDB, Firebase...)</span></p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
+                >100%</div>
+              </div>   
+
+               <p class="mt-4 text-base mb-1 font-light">HTML - CSS</p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl bg-cv-500 w-full text-white text-center text-xs"
+                >100%</div>
+              </div>
+            
+
+              <p class="mt-4 text-base mb-1 font-light">PHP</p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-9/10 text-white text-center text-xs"
+                >90%</div>
+              </div>              
+
+               <p class="mt-4 text-base mb-1 font-light">Python</p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-8/10 text-white text-center text-xs"
+                >80%</div>
+              </div>
+
+              <p class="mt-4 text-base mb-1 font-light">WebDesign (Créativité artistique)</p>
+              <div class="text-gray-200 rounded-xl mx-1 mb-2">
+                <div
+                  class="rounded-xl   bg-cv-500 w-7/10 text-white text-center text-xs"
+                >70%</div>
+              </div>
+
+              
+
+              <p class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-12 mx-1">
                 <fa
                   :icon="['fal', 'globe']"
                   class="fa-fw mr-3"
                 ></fa
-                ><span class="text-base">Langues parlées</span>
+                ><span class="text-lg">Langues parlées</span>
               </p>
               <p class="mt-3 text-base mb-1 font-light">Français</p>
               <div class="text-gray-200 rounded-xl mx-1 mb-2">
@@ -79,8 +141,7 @@
                   class="rounded-xl   bg-cv-500 w-1/2 text-white text-center text-xs"
                 >50%</div>
               </div>
-              <br />
-              <p class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-4 mx-1 mb-4">
+              <p class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1 mb-4">
                 <fa
                   :icon="['fal', 'golfball']"
                   class="fa-fw mr-3"
@@ -111,82 +172,147 @@
         <!-- Right Column -->
         <div class="col-span-2 bg-white shadow-stripe p-4 rounded-md">
           <div class="">
-             <p class="text-2xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title">
+             <p class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title">
                 <fa
                   :icon="['fal', 'briefcase']"
                   class="fa-fw mr-3"
                 ></fa
-                ><span class="text-xl">Expérience professionnelle</span>
+                ><span class="text-2xl">Expérience professionnelle</span>
               </p>
-            <div class="">
-              <h5 class="text-lg">
-                <span class="text-cv-500 font-semibold">Directeur technique</span> / <a href="https://www.unmondeautrement.com" target="_blank">Un Monde Autrement</a>
+            <div class="mx-3 mt-10">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Directeur technique</span> / <a href="https://www.unmondeautrement.com" target="_blank">Un Monde Autrement</a> / Bali, Indonésie
               </h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar  mr-2"></i>Jan 2015 -
-                <span class="w3-tag w3-teal w3-round">Current</span>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Avril 2009 - Septembre 2020</span>
               </h6>
-              <p>
-                Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel
-                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
-                soluta ea et odio, unde doloremque repellendus iure, iste.
+              <p class="font-light text-justify">
+                Responsable du développement informatique pour les 8 pays franchisés du réseau. Developpement et maintenance des sites web des agences, création un portail client, création d'outils informatiques divers utiles aux bon fonctionnement du réseau. Développement complet d'un ERP évolutive sur mesure répondant aux besoins spécifiques de la compagnie ainsi qu'aux différentes exigences et contraintes de chaque pays du réseau. Chargé de la formation des nouveaux franchisés aux différents outils ainsi que maintenance et SAV quotidien par la suite. Chargé de la mise en place et de la maintenance des serveurs dédiés hébèrgeants les outils du réseau.
               </p>
-              <hr />
+              <hr class="mt-4 mb-6"/>
             </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar  mr-2"></i>Mar 2012 - Dec 2014
-              </h6>
-              <p>
-                Consectetur adipisicing elit. Praesentium magnam consectetur vel
-                in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora
-                soluta ea et odio, unde doloremque repellendus iure, iste.
-              </p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity">
-                <b>Graphic Designer / designsomething.com</b>
+            <div class="mx-3">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Chef de projet</span> / Société Big Foot / Bali Indonésie
               </h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar  mr-2"></i>Jun 2010 - Mar 2012
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Décembre 2008 - Mars 2009</span>
               </h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <br />
+              <p class="font-light text-justify">
+                Chef de projet, résponsable d'une équipe de 4 programmeurs indonésiens dans le cadre du développement d'un projet de portail B2B pour les hôtels et resorts d'Asie. Analyse et mise en place des différentes étapes du développement et assignation des tâches aux différents membres de l'equipe.
+              </p>
+              <hr class="mt-4 mb-6"/>
+            </div>
+            <div class="mx-3">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Responsable commercial</span> / <a href="https://www.kitview.com" target="_blank">KitView</a> / Strasbourg, France
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Septembre 2007 - novembre 2008</span>
+              </h6>
+              <p class="font-light text-justify">
+                Responsable technique et commercial de la région Grand-Est pour la société KitView spécialisée dans le développement d'outils informatiques de gestion et d'imagerie médicale. Installation et maintenance des systèmes informatiques dans les cabinets médicaux de nos clients, et développement de différents outils pour la gestion des du réseau et participation au développement des différents logiciels de la gamme KitView. 
+              </p>
+              <hr class="mt-4 mb-6"/>
+            </div> 
+            <div class="mx-3">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Développeur</span> / Freelance / Montréal, Canada
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Novembre 2004 - Juin 2007</span>
+              </h6>
+              <p class="font-light text-justify">
+                Développeur de logiciels et de sites web en freelance. 
+              </p>
+              <hr class="mt-4 mb-6"/>
+            </div> 
+            <div class="mx-3">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Développeur Junior</span> / Diatélic / Nancy, France
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Septembre 2003 - Octobre 2004</span>
+              </h6>
+              <p class="font-light text-justify">
+                Chargé du développement d'un logiciel de gestion de planning pour le service de néphrologie le CHU de Brabois. Développement du site web de la société Diatélic, précurseuse dans la télémédecine et la création de systèmes intelligents pour le suivis de patients atteints d'insuffisance rénale.
+              </p>
+              <hr class="mt-4 mb-6"/>
+            </div> 
+            <div class="mx-3">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">Administrateur Réseau</span> / Qualipse / Strasbourg, France
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Septembre 2001 - Juillet 2003</span>
+              </h6>
+              <p class="font-light text-justify">
+                Résponsable réseau en alternance dans le cadre d'études en BTS informatique de gestion.
+              </p>
+            </div> 
+          </div>
+
+
+          <div class="mt-12">
+             <p class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title">
+                <fa
+                  :icon="['fal', 'graduationcap']"
+                  class="fa-fw mr-3"
+                ></fa
+                ><span class="text-2xl">Diplômes</span>
+              </p>
+            <div class="mx-3 mt-5">
+              <h5 class="text-base">
+                <span class="text-cv-500 font-semibold text-xl">BTS informatique de gestion</span> / IESA / Strasbourg, France
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Septembre 2001 à Juillet 2003</span>
+              </h6>
+              <hr class="my-6"/>
+            </div>
+            <div class="mx-3">
+              <h5 class="text-base">
+                  <span class="text-cv-500 font-semibold text-xl">Baccalauréat section scientifique</span> / Institut Horizon / Strasbourg, France
+              </h5>
+              <h6 class="text-gray-500 font-light mb-2 ml-4">
+                <fa
+                  :icon="['fal', 'calendar']"
+                  class="fa-fw  mr-2"
+                ></fa
+                ><span>Année 2000</span>
+              </h6>
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-certificate  mr-2 w3-xxlarge text-cv-500"></i
-              >Education
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar fa-fw mr-2"></i>Forever
-              </h6>
-              <p>Web Development! All I need to know in one place</p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>London Business School</b></h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar fa-fw mr-2"></i>2013 - 2015
-              </h6>
-              <p>Master Degree</p>
-              <hr />
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>School of Coding</b></h5>
-              <h6 class="text-cv-500">
-                <i class="fa fa-calendar fa-fw mr-2"></i>2010 - 2013
-              </h6>
-              <p>Bachelor Degree</p>
-              <br />
-            </div>
-          </div>
+          
 
           <!-- End Right Column -->
         </div>
@@ -197,21 +323,6 @@
       <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Find me on social media.</p>
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <p>
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          >w3.css</a
-        >
-      </p>
-    </footer>
   </div>
 </template>
 

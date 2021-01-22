@@ -63,6 +63,9 @@ export default {
               'faGolfBall',
               'faGolfClub',
               'faPiano',
+              'faCalendar',
+              'faGraduationCap',
+              'faCog',
             ],
           },
           {
