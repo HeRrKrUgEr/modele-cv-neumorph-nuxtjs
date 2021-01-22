@@ -45,6 +45,14 @@
                 ></i
                 ><a href="tel:+33611826310"><span class="text-sm">06.11.82.63.10</span></a>
               </p>
+
+              <a class="button-download mb-3 mx-4" href="cv-vincentchanliau-2021.pdf">
+                <div class="button-download__content">
+                  <i class="far fa-file-pdf"></i>
+                  <p class="button-download__text">Télécharger mon CV</p>
+                </div>
+              </a>
+
               <hr/>
 
               <p class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1">
@@ -348,6 +356,74 @@ export default {}
 
 .clipped img{
   clip-path: polygon(100% 70%, 0% 100%, 0% 0%, 100% 0%);
+}
+
+
+.button-download {
+  position: relative;
+  padding: 0;
+  border: 2px solid #888888;
+  outline: none;
+  background-color: #f4f5f6;
+  border-radius: 15px;
+  box-shadow: -3px -5px 10px #ffffff, -3px -5px 7px #ffffff, -5px 0px 10px #ffffff, 2px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.13s ease-in-out;
+  cursor: pointer;
+}
+.button-download:hover {
+  box-shadow: none;
+}
+.button-download:hover .button-download__content {
+  box-shadow: none;
+}
+.button-download:hover .button-download__content .button-download__text, .button-download:hover .button-download__content i {
+  transform: translate3d(0px, 0px, 0px);
+}
+.button-download__content {
+  position: relative;
+  display: grid;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr;*/
+  box-shadow: inset 0px -4px 0px #dddddd, 0px -4px 0px #f4f5f6;
+  border-radius: 15px;
+  transition: 0.13s ease-in-out;
+  z-index: 1;
+}
+.button-download__text {
+  position: relative;
+  transform: translate3d(0px, -4px, 0px);
+  margin: 0;
+  align-self: end;
+  grid-column: 2/5;
+  /*grid-row: 2;*/
+  text-align: center;
+  font-size: 18px;
+  /*line-height: 31px;*/
+  background-color: #888888;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  transition: 0.13s ease-in-out;
+}
+
+.button-download__content i{
+  position: absolute;
+  transform: translate3d(0px, -4px, 0px);
+  font-size: 26px;
+  margin: 8px 15px;
+  background-color:rgba(234, 24, 15, 0.8);
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
+  transition: 0.13s ease-in-out;
+  /*text-shadow: 2px 2px 3px rgba(234, 24, 15, 0.8);*/
 }
 
 </style>
