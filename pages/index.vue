@@ -5,27 +5,34 @@
       <!-- The Grid -->
       <div class="grid grid-cols-3 gap-4">
         <!-- Left Column -->
-        <div class="col-span-1 bg-white shadow-stripe p-4 rounded-md">
+        <div class="col-span-1 bg-white shadow-md p-4 rounded-md">
           <div class="overflow-hidden">
-            <div class="relative p-1/3 mb-6 bg-gray-100 rounded-md overflow-hidden  clipped">
+            <div
+              class="relative p-1/3 mb-6 bg-gray-100 rounded-md overflow-hidden clipped"
+            >
               <img
                 class="absolute top-0 left-0 w-full h-full object-cover"
                 src="img/vincent.jpg"
               />
-             
-              <div class="text-2xl font-semibold  text-right absolute right-0 bottom-0 ">
-                <h2 class="mr-3">Vincent <span class="text-cv-500">Chanliau</span></h2>
+
+              <div
+                class="text-2xl font-semibold text-right absolute right-0 bottom-0"
+              >
+                <h2 class="mr-3">
+                  Vincent <span class="text-cv-500">Chanliau</span>
+                </h2>
               </div>
             </div>
 
-
-            <div>             
+            <div>
               <p class="mb-2 text-xl ml-1">
                 <fa
                   :icon="['fal', 'briefcase']"
-                  class="fa-fw  mr-3 text-cv-500 "
+                  class="fa-fw mr-3 text-cv-500"
                 ></fa
-                ><span class="text-sm font-semibold">Développeur Full-Stack</span>
+                ><span class="text-sm font-semibold"
+                  >Développeur Web Full-Stack - Freelance</span
+                >
               </p>
               <p class="mb-2 text-xl ml-1">
                 <fa :icon="['fal', 'home']" class="fa-fw mr-3 text-cv-500"></fa
@@ -34,143 +41,165 @@
               <p class="mb-2 text-xl ml-1">
                 <fa
                   :icon="['fal', 'envelope']"
-                  class="fa-fw  mr-3 text-cv-500 "
+                  class="fa-fw mr-3 text-cv-500"
                 ></fa
-                ><a href="mailto:vchanliau@gmail.com" class="text-sm">vchanliau@gmail.com</a>
+                ><a href="mailto:vchanliau@gmail.com" class="text-sm"
+                  >vchanliau@gmail.com</a
+                >
               </p>
 
-
               <p class="mb-3 text-xl ml-1">
-                 <fa
+                <fa
                   :icon="['fal', 'phone-rotary']"
-                  class="fa-fw  mr-3 text-cv-500 "
+                  class="fa-fw mr-3 text-cv-500"
                 ></fa
-                ></i
                 ><a href="tel:+33611826310" class="text-sm">06.11.82.63.10</a>
               </p>
 
-              <a class="button-download mb-3 mx-4" href="cv-vincentchanliau-2021.pdf">
+              <a
+                class="inline-block button-download mb-3 border-0"
+                href="cv-vincentchanliau-2021.pdf"
+              >
                 <div class="button-download__content">
-                  <i class="far fa-file-pdf"></i>
-                  <p class="button-download__text">Télécharger mon CV</p>
+                  <p class="button-download__text">
+                    <svg
+                      id="svgm"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fal"
+                      data-icon="filepdf"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="svg-inline--fa fa-filepdf fa-w-16"
+                    >
+                      <path
+                        fill="black"
+                        d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zm-22.6 22.7c2.1 2.1 3.5 4.6 4.2 7.4H256V32.5c2.8.7 5.3 2.1 7.4 4.2l83.9 83.9zM336 480H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h176v104c0 13.3 10.7 24 24 24h104v304c0 8.8-7.2 16-16 16zm-22-171.2c-13.5-13.3-55-9.2-73.7-6.7-21.2-12.8-35.2-30.4-45.1-56.6 4.3-18 12-47.2 6.4-64.9-4.4-28.1-39.7-24.7-44.6-6.8-5 18.3-.3 44.4 8.4 77.8-11.9 28.4-29.7 66.9-42.1 88.6-20.8 10.7-54.1 29.3-58.8 52.4-3.5 16.8 22.9 39.4 53.1 6.4 9.1-9.9 19.3-24.8 31.3-45.5 26.7-8.8 56.1-19.8 82-24 21.9 12 47.6 19.9 64.6 19.9 27.7.1 28.9-30.2 18.5-40.6zm-229.2 89c5.9-15.9 28.6-34.4 35.5-40.8-22.1 35.3-35.5 41.5-35.5 40.8zM180 175.5c8.7 0 7.8 37.5 2.1 47.6-5.2-16.3-5-47.6-2.1-47.6zm-28.4 159.3c11.3-19.8 21-43.2 28.8-63.7 9.7 17.7 22.1 31.7 35.1 41.5-24.3 4.7-45.4 15.1-63.9 22.2zm153.4-5.9s-5.8 7-43.5-9.1c41-3 47.7 6.4 43.5 9.1z"
+                        class=""
+                      ></path></svg
+                    >Télécharger mon CV
+                  </p>
                 </div>
               </a>
 
-              <hr/>
+              <hr />
 
-              <p class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1">
-                <fa
-                  :icon="['fal', 'cog']"
-                  class="fa-fw mr-3"
-                ></fa
+              <p
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
+              >
+                <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
               </p>
 
-
-              <p class="mt-4 text-base mb-1 font-light">.NET / .NET Core <span class="text-xs italic">(ASP.NET, C#, WebServices...)</span></p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
-                >100%</div>
-              </div>
-
-              <p class="mt-4 text-base mb-1 font-light">Javascript <span class="text-xs italic">(NodeJS, VueJS, React, PWA...)</span></p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
-                >90%</div>
-              </div>
-
-             
-
-              <p class="mt-4 text-base mb-1 font-light">Bases de Données <span class="text-xs italic">(SQLServer, MySql, MongoDB, Firebase...)</span></p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
-                >100%</div>
-              </div>   
-
-               <p class="mt-4 text-base mb-1 font-light">HTML - CSS</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl bg-cv-500 w-full text-white text-center text-xs"
-                >100%</div>
-              </div>
-            
-
-              <p class="mt-4 text-base mb-1 font-light">PHP</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-9/10 text-white text-center text-xs"
-                >90%</div>
-              </div>              
-
-               <p class="mt-4 text-base mb-1 font-light">Python</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-8/10 text-white text-center text-xs"
-                >80%</div>
-              </div>
-
-              <p class="mt-4 text-base mb-1 font-light">WebDesign (Créativité artistique)</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-7/10 text-white text-center text-xs"
-                >70%</div>
-              </div>
-
-              
-
-              <p class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-12 mx-1">
+              <p class="mt-4 text-base mb-2 font-light ml-2">
                 <fa
-                  :icon="['fal', 'globe']"
-                  class="fa-fw mr-3"
+                  :icon="['fal', 'asterisk']"
+                  class="mr-2 text-cv-500 text-xs"
                 ></fa
-                ><span class="text-lg">Langues parlées</span>
+                >Analyse et gestion de projets informatiques
               </p>
-              <p class="mt-3 text-base mb-1 font-light">Français</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
-                >100%</div>
-              </div>
-               <p class="mt-3 text-base mb-1 font-light">Anglais</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-full text-white text-center text-xs"
-                >100%</div>
-              </div>
-              <p class="mt-3 text-base mb-1 font-light">Indonésien</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-7/10 text-white text-center text-xs"
-                >70%</div>
-              </div>
-              <p class="mt-3 text-base mb-1 font-light">Espagnol</p>
-              <div class="text-gray-200 rounded-xl mx-1 mb-2">
-                <div
-                  class="rounded-xl   bg-cv-500 w-1/2 text-white text-center text-xs"
-                >50%</div>
-              </div>
-              <p class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1 mb-4">
+              <p class="text-base mb-2 font-light">
                 <fa
-                  :icon="['fal', 'golfball']"
-                  class="fa-fw mr-3"
+                  :icon="['fal', 'asterisk']"
+                  class="mr-2 text-cv-500 text-xs"
                 ></fa
+                >Développement d'applications et outils ERP
+              </p>
+              <p class="text-base mb-2 font-light ml-2">
+                <fa
+                  :icon="['fal', 'asterisk']"
+                  class="mr-2 text-cv-500 text-xs"
+                ></fa
+                >Développement d'applications et sites Web
+              </p>
+              <p class="text-base mb-2 font-light">
+                <fa
+                  :icon="['fal', 'asterisk']"
+                  class="mr-2 text-cv-500 text-xs"
+                ></fa
+                >Administration de serveurs <i>bare metal</i> et <i>cloud</i>
+              </p>
+
+              <p
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
+              >
+                <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
+                ><span class="text-lg">Frameworks et CMS</span>
+              </p>
+
+              <div class="grid grid-cols-6 gap-3 mt-4 justify-center">
+                <div class=""><img src="img/mnet.png" /></div>
+                <div class=""><img src="img/vuejs.png" /></div>
+                <div class=""><img src="img/tailwind.png" /></div>
+                <div class=""><img src="img/bootstrap.png" /></div>
+                <div class=""><img src="img/laravel.png" /></div>
+                <div class=""><img src="img/wordpress.png" /></div>
+              </div>
+
+              <p
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
+              >
+                <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
+                ><span class="text-lg">Langages informatiques</span>
+              </p>
+
+              <div class="grid grid-cols-7 gap-3 mt-6 justify-center">
+                <div class=""><img src="img/html.png" /></div>
+                <div class=""><img src="img/css.png" /></div>
+                <div class=""><img src="img/javascript.png" /></div>
+                <div class=""><img src="img/php.png" /></div>
+                <div class=""><img src="img/sql.png" /></div>
+                <div class=""><img src="img/csharp.png" /></div>
+                <div class=""><img src="img/python.png" /></div>
+              </div>
+
+              <p
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
+              >
+                <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
+                ><span class="text-lg">Langues</span>
+              </p>
+
+              <div class="flex flex-row items-center justify-start ml-4 mt-6">
+                <img src="img/france.png" class="mr-3 shadow-md" />
+                <p class="text-base font-light">Français (langue maternelle)</p>
+              </div>
+
+              <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                <img src="img/uk.png" class="mr-3 shadow-md" />
+                <p class="text-base font-light">Anglais (bilingue)</p>
+              </div>
+
+              <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                <img src="img/indonesia.png" class="mr-3 shadow-md" />
+                <p class="text-base font-light">Indonésien (intermédiaire)</p>
+              </div>
+
+              <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                <img src="img/spain.png" class="mr-3 shadow-md" />
+                <p class="text-base font-light">Espagnol (basique)</p>
+              </div>
+
+              <p
+                class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1 mb-4"
+              >
+                <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
               </p>
-              <p class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center">
-                 <fa
+              <p
+                class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center"
+              >
+                <fa
                   :icon="['fal', 'golfclub']"
-                  class="fa-fw  mr-2 text-white "
+                  class="fa-fw mr-2 text-white"
                 ></fa
                 ><span class="text-sm font-medium">Golf</span>
               </p>
-              <p class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center">
-                 <fa
-                  :icon="['fal', 'piano']"
-                  class="fa-fw  mr-2 text-white "
-                ></fa
+              <p
+                class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center"
+              >
+                <fa :icon="['fal', 'piano']" class="fa-fw mr-2 text-white"></fa
                 ><span class="text-sm font-medium">Piano</span>
               </p>
             </div>
@@ -181,149 +210,175 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-span-2 bg-white shadow-stripe p-4 rounded-md">
+        <div class="col-span-2 bg-white shadow-md p-4 rounded-md">
           <div class="">
-             <p class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title">
-                <fa
-                  :icon="['fal', 'briefcase']"
-                  class="fa-fw mr-3"
-                ></fa
-                ><span class="text-2xl">Expérience professionnelle</span>
-              </p>
+            <p
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+            >
+              <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
+              ><span class="text-2xl">Expérience professionnelle</span>
+            </p>
             <div class="mx-3 mt-10">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Directeur technique</span> / <a href="https://www.unmondeautrement.com" target="_blank">Un Monde Autrement</a> / Bali, Indonésie
+              <h5 class="text-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Directeur technique</span
+                >
+                /
+                <a href="https://www.unmondeautrement.com" target="_blank"
+                  >Un Monde Autrement</a
+                >
+                / Bali, Indonésie
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Avril 2009 - Septembre 2020</span>
               </h6>
-              <p class="font-light text-justify">
-                Responsable du développement informatique pour les 8 pays franchisés du réseau. Developpement et maintenance des sites web des agences, création un portail client, création d'outils informatiques divers utiles aux bon fonctionnement du réseau. Développement complet d'un ERP évolutive sur mesure répondant aux besoins spécifiques de la compagnie ainsi qu'aux différentes exigences et contraintes de chaque pays du réseau. Chargé de la formation des nouveaux franchisés aux différents outils ainsi que maintenance et SAV quotidien par la suite. Chargé de la mise en place et de la maintenance des serveurs dédiés hébèrgeants les outils du réseau.
+              <p class="font-light text-justify text-sm mx-2">
+                Responsable du développement informatique pour les 8 pays
+                franchisés du réseau. Developpement et maintenance des sites web
+                des agences, création un portail client, création d'outils
+                informatiques divers utiles aux bon fonctionnement du réseau.
+                Développement complet d'un ERP évolutive sur mesure répondant
+                aux besoins spécifiques de la compagnie ainsi qu'aux différentes
+                exigences et contraintes de chaque pays du réseau. Chargé de la
+                formation des nouveaux franchisés aux différents outils ainsi
+                que maintenance et SAV quotidien par la suite. Chargé de la mise
+                en place et de la maintenance des serveurs dédiés hébèrgeants
+                les outils du réseau.
               </p>
-              <hr class="mt-4 mb-6"/>
+              <hr class="mt-4 mb-6" />
             </div>
             <div class="mx-3">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Chef de projet</span> / Société Big Foot / Bali Indonésie
+              <h5 class="ext-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Chef de projet</span
+                >
+                / Société Big Foot / Bali Indonésie
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Décembre 2008 - Mars 2009</span>
               </h6>
-              <p class="font-light text-justify">
-                Chef de projet, résponsable d'une équipe de 4 programmeurs indonésiens dans le cadre du développement d'un projet de portail B2B pour les hôtels et resorts d'Asie. Analyse et mise en place des différentes étapes du développement et assignation des tâches aux différents membres de l'equipe.
+              <p class="font-light text-justify text-sm mx-2">
+                Chef de projet, résponsable d'une équipe de 4 programmeurs
+                indonésiens dans le cadre du développement d'un projet de
+                portail B2B pour les hôtels et resorts d'Asie. Analyse et mise
+                en place des différentes étapes du développement et assignation
+                des tâches aux différents membres de l'equipe.
               </p>
-              <hr class="mt-4 mb-6"/>
+              <hr class="mt-4 mb-6" />
             </div>
             <div class="mx-3">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Responsable commercial</span> / <a href="https://www.kitview.com" target="_blank">KitView</a> / Strasbourg, France
+              <h5 class="text-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Responsable commercial</span
+                >
+                /
+                <a href="https://www.kitview.com" target="_blank">KitView</a> /
+                Strasbourg, France
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Septembre 2007 - novembre 2008</span>
               </h6>
-              <p class="font-light text-justify">
-                Responsable technique et commercial de la région Grand-Est pour la société KitView spécialisée dans le développement d'outils informatiques de gestion et d'imagerie médicale. Installation et maintenance des systèmes informatiques dans les cabinets médicaux de nos clients, et développement de différents outils pour la gestion des du réseau et participation au développement des différents logiciels de la gamme KitView. 
+              <p class="font-light text-justify text-sm mx-2">
+                Responsable technique et commercial de la région Grand-Est pour
+                la société KitView spécialisée dans le développement d'outils
+                informatiques de gestion et d'imagerie médicale. Installation et
+                maintenance des systèmes informatiques dans les cabinets
+                médicaux de nos clients, et développement de différents outils
+                pour la gestion des du réseau et participation au développement
+                des différents logiciels de la gamme KitView.
               </p>
-              <hr class="mt-4 mb-6"/>
-            </div> 
+              <hr class="mt-4 mb-6" />
+            </div>
             <div class="mx-3">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Développeur</span> / Freelance / Montréal, Canada
+              <h5 class="text-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Développeur</span
+                >
+                / Freelance / Montréal, Canada
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Novembre 2004 - Juin 2007</span>
               </h6>
-              <p class="font-light text-justify">
-                Développeur de logiciels et de sites web en freelance. 
+              <p class="font-light text-justify text-sm">
+                Développeur de logiciels et de sites web en freelance.
               </p>
-              <hr class="mt-4 mb-6"/>
-            </div> 
+              <hr class="mt-4 mb-6" />
+            </div>
             <div class="mx-3">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Développeur Junior</span> / Diatélic / Nancy, France
+              <h5 class="text-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Développeur Junior</span
+                >
+                / Diatélic / Nancy, France
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Septembre 2003 - Octobre 2004</span>
               </h6>
-              <p class="font-light text-justify">
-                Chargé du développement d'un logiciel de gestion de planning pour le service de néphrologie le CHU de Brabois. Développement du site web de la société Diatélic, précurseuse dans la télémédecine et la création de systèmes intelligents pour le suivis de patients atteints d'insuffisance rénale.
+              <p class="font-light text-justify text-sm mx-2">
+                Chargé du développement d'un logiciel de gestion de planning
+                pour le service de néphrologie le CHU de Brabois. Développement
+                du site web de la société Diatélic, précurseuse dans la
+                télémédecine et la création de systèmes intelligents pour le
+                suivis de patients atteints d'insuffisance rénale.
               </p>
-              <hr class="mt-4 mb-6"/>
-            </div> 
+              <hr class="mt-4 mb-6" />
+            </div>
             <div class="mx-3">
-              <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">Administrateur Réseau</span> / Qualipse / Strasbourg, France
+              <h5 class="text-base mx-3">
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Administrateur Réseau</span
+                >
+                / Qualipse / Strasbourg, France
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Septembre 2001 - Juillet 2003</span>
               </h6>
-              <p class="font-light text-justify">
-                Résponsable réseau en alternance dans le cadre d'études en BTS informatique de gestion.
+              <p class="font-light text-justify text-sm mx-2">
+                Résponsable réseau en alternance dans le cadre d'études en BTS
+                informatique de gestion.
               </p>
-            </div> 
+            </div>
           </div>
 
-
           <div class="mt-12">
-             <p class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title">
-                <fa
-                  :icon="['fal', 'graduationcap']"
-                  class="fa-fw mr-3"
-                ></fa
-                ><span class="text-2xl">Diplômes</span>
-              </p>
+            <p
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+            >
+              <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
+              ><span class="text-2xl">Diplômes</span>
+            </p>
             <div class="mx-3 mt-5">
               <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl">BTS informatique de gestion</span> / IESA / Strasbourg, France
+                <span class="text-cv-500 font-semibold text-xl"
+                  >BTS informatique de gestion</span
+                >
+                / IESA / Strasbourg, France
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Septembre 2001 à Juillet 2003</span>
               </h6>
-              <hr class="my-6"/>
+              <hr class="my-6" />
             </div>
             <div class="mx-3">
               <h5 class="text-base">
-                  <span class="text-cv-500 font-semibold text-xl">Baccalauréat section scientifique</span> / Institut Horizon / Strasbourg, France
+                <span class="text-cv-500 font-semibold text-xl"
+                  >Baccalauréat section scientifique</span
+                >
+                / Institut Horizon / Strasbourg, France
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
-                <fa
-                  :icon="['fal', 'calendar']"
-                  class="fa-fw  mr-2"
-                ></fa
+                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
                 ><span>Année 2000</span>
               </h6>
             </div>
           </div>
-
-          
 
           <!-- End Right Column -->
         </div>
@@ -333,7 +388,6 @@
 
       <!-- End Page Container -->
     </div>
-
   </div>
 </template>
 
@@ -348,19 +402,18 @@ export default {}
 }
 */
 
-.clipped{
-  box-shadow: inset -1px -0px 3px rgba(0,0,0,0.2);
+.clipped {
+  box-shadow: inset -1px -0px 3px rgba(0, 0, 0, 0.2);
 }
 
-.title{
-          box-shadow: inset -1px 1px 3px rgba(0,0,0,0.4);
-    clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);
+.title {
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, 0.4);
+  clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);
 }
 
-.clipped img{
-  clip-path: polygon(100% 70%, 0% 100%, 0% 0%, 100% 0%);
+.clipped img {
+  clip-path: polygon(100% 75%, 0% 100%, 0% 0%, 100% 0%);
 }
-
 
 .button-download {
   position: relative;
@@ -368,8 +421,9 @@ export default {}
   border: 2px solid #888888;
   outline: none;
   background-color: #f4f5f6;
-  border-radius: 15px;
-  box-shadow: -3px -5px 10px #ffffff, -3px -5px 7px #ffffff, -5px 0px 10px #ffffff, 2px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  box-shadow: -3px -5px 10px #ffffff, -3px -5px 7px #ffffff,
+    -5px 0px 10px #ffffff, 2px 3px 5px rgba(0, 0, 0, 0.2);
   transition: 0.13s ease-in-out;
   cursor: pointer;
 }
@@ -379,31 +433,32 @@ export default {}
 .button-download:hover .button-download__content {
   box-shadow: none;
 }
-.button-download:hover .button-download__content .button-download__text, .button-download:hover .button-download__content i {
+.button-download:hover .button-download__content .button-download__text,
+.button-download:hover .button-download__content svg {
   transform: translate3d(0px, 0px, 0px);
 }
 .button-download__content {
   position: relative;
   display: grid;
-  padding: 10px 0;
+  padding: 2px 0;
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /*grid-template-rows: 1fr 1fr;*/
-  box-shadow: inset 0px -4px 0px #dddddd, 0px -4px 0px #f4f5f6;
-  border-radius: 15px;
+  box-shadow: inset 0px -2px 0px #dddddd, 0px -2px 0px #f4f5f6;
+  border-radius: 2px;
   transition: 0.13s ease-in-out;
   z-index: 1;
 }
 .button-download__text {
   position: relative;
-  transform: translate3d(0px, -4px, 0px);
+  transform: translate3d(0px, -2px, 0px);
   margin: 0;
   align-self: end;
   grid-column: 2/5;
   /*grid-row: 2;*/
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   /*line-height: 31px;*/
   background-color: #888888;
   color: transparent;
@@ -414,19 +469,77 @@ export default {}
   transition: 0.13s ease-in-out;
 }
 
-.button-download__content i{
+.button-download__content .svg-wrap {
   position: absolute;
   transform: translate3d(0px, -4px, 0px);
-  font-size: 26px;
-  margin: 8px 15px;
-  background-color:rgba(234, 24, 15, 0.8);
-  color: transparent;
+  font-size: 18px;
+  margin: 4px 8px;
+  background-color: rgba(234, 24, 15, 0.8);
+
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
   transition: 0.13s ease-in-out;
-  /*text-shadow: 2px 2px 3px rgba(234, 24, 15, 0.8);*/
 }
 
+.button-download__content .svg-wrap svg {
+  color: transparent;
+  /*text-shadow: 2px 2px 3px rgba(234, 24, 15, 0.8);*/
+}
+.button-download__content svg path {
+  fill: transparent;
+}
+
+.social-buttons {
+  margin: 30px 10px 40px;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 127, 171, 0.5),
+    rgba(0, 127, 171, 1)
+  );
+  border-radius: 50%;
+
+  transition: 0.265s ease-out;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a svg {
+  z-index: 1;
+  transition: 0.265s ease-out;
+}
+
+.social-buttons a:hover svg {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 127, 171, 0.5),
+    rgba(0, 127, 171, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
 </style>

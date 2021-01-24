@@ -66,6 +66,7 @@ export default {
               'faCalendar',
               'faGraduationCap',
               'faCog',
+              'faFilePdf',
             ],
           },
           {
