@@ -236,7 +236,7 @@
               <p class="font-light text-justify text-sm mx-2">
                 Responsable du développement informatique pour les 8 pays
                 franchisés du réseau. Developpement et maintenance des sites web
-                des agences, création un portail client, création d'outils
+                des agences, création d'un portail client, création d'outils
                 informatiques divers utiles aux bon fonctionnement du réseau.
                 Développement complet d'un ERP évolutive sur mesure répondant
                 aux besoins spécifiques de la compagnie ainsi qu'aux différentes
