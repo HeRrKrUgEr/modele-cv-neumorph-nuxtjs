@@ -234,17 +234,18 @@
                 ><span>Avril 2009 - Septembre 2020</span>
               </h6>
               <p class="font-light text-justify text-sm mx-2">
-                Responsable du développement informatique pour les 8 pays
-                franchisés du réseau. Developpement et maintenance des sites web
-                des agences, création d'un portail client, création d'outils
-                informatiques divers utiles aux bon fonctionnement du réseau.
-                Développement complet d'un ERP évolutive sur mesure répondant
-                aux besoins spécifiques de la compagnie ainsi qu'aux différentes
+                Responsable du développement informatique des agences de
+                tourisme <i>Un Monde autrement</i> pour les 8 pays franchisés du
+                réseau. Développement et maintenance des sites web des agences,
+                création d’un portail client, création de divers outils
+                informatiques utiles au bon fonctionnement du réseau.
+                Développement complet d'un ERP évolutif sur mesure répondant aux
+                besoins spécifiques de la compagnie ainsi qu'aux différentes
                 exigences et contraintes de chaque pays du réseau. Chargé de la
                 formation des nouveaux franchisés aux différents outils ainsi
-                que maintenance et SAV quotidien par la suite. Chargé de la mise
-                en place et de la maintenance des serveurs dédiés hébèrgeants
-                les outils du réseau.
+                que de la maintenance et du SAV quotidien par la suite. Chargé
+                de la mise en place et de la maintenance des serveurs dédiés
+                hébergeant les outils du réseau.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
@@ -260,11 +261,11 @@
                 ><span>Décembre 2008 - Mars 2009</span>
               </h6>
               <p class="font-light text-justify text-sm mx-2">
-                Chef de projet, résponsable d'une équipe de 4 programmeurs
-                indonésiens dans le cadre du développement d'un projet de
-                portail B2B pour les hôtels et resorts d'Asie. Analyse et mise
-                en place des différentes étapes du développement et assignation
-                des tâches aux différents membres de l'equipe.
+                Chef de projet, responsable d'une équipe de 4 programmeurs dans
+                le cadre du développement d'un projet de portail B2B pour les
+                hôtels et resorts d'Asie. Analyse et mise en place des
+                différentes étapes du développement et assignation des tâches
+                aux différents membres de l'équipe.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
@@ -283,12 +284,12 @@
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Responsable technique et commercial de la région Grand-Est pour
-                la société KitView spécialisée dans le développement d'outils
-                informatiques de gestion et d'imagerie médicale. Installation et
-                maintenance des systèmes informatiques dans les cabinets
-                médicaux de nos clients, et développement de différents outils
-                pour la gestion des du réseau et participation au développement
-                des différents logiciels de la gamme KitView.
+                la société <i>KitView</i> spécialisée dans le développement
+                d'outils informatiques de gestion et d'imagerie médicale.
+                Installation et maintenance des systèmes informatiques dans les
+                cabinets médicaux de ses clients. Développement de plusieurs
+                outils pour la gestion du réseau et participation au
+                développement des différents logiciels de la gamme KitView.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
@@ -321,10 +322,10 @@
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Chargé du développement d'un logiciel de gestion de planning
-                pour le service de néphrologie le CHU de Brabois. Développement
+                pour le service de néphrologie du CHU de Brabois. Développement
                 du site web de la société Diatélic, précurseuse dans la
                 télémédecine et la création de systèmes intelligents pour le
-                suivis de patients atteints d'insuffisance rénale.
+                suivi de patients atteints d'insuffisance rénale.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
@@ -340,7 +341,7 @@
                 ><span>Septembre 2001 - Juillet 2003</span>
               </h6>
               <p class="font-light text-justify text-sm mx-2">
-                Résponsable réseau en alternance dans le cadre d'études en BTS
+                Responsable réseau dans le cadre d'études en alternance en BTS
                 informatique de gestion.
               </p>
             </div>
