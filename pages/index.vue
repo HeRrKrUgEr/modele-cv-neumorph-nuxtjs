@@ -231,7 +231,7 @@
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
                 <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Avril 2009 - Septembre 2020</span>
+                ><span>Depuis avril 2009</span>
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Responsable du développement informatique des agences de
