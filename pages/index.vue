@@ -1,20 +1,21 @@
 <template>
   <div>
     <!-- Page Container -->
-    <div class="container mx-auto p-6">
+    <div class="xl:container mx-auto xl::p-6">
       <!-- The Grid -->
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 lg:gap-4">
         <!-- Left Column -->
-        <div class="col-span-1 bg-white shadow-md p-4 rounded-md">
+        <div
+          class="col-span-3 lg:col-span-1 bg-white shadow-md lg:py-4 rounded-md"
+        >
           <div class="overflow-hidden">
             <div
-              class="relative p-1/3 mb-6 bg-gray-100 rounded-md overflow-hidden clipped"
+              class="relative p-1/3 mb-6 lg:rounded-md overflow-hidden clipped lg:px-4"
             >
               <img
                 class="absolute top-0 left-0 w-full h-full object-cover"
                 src="img/vincent.jpg"
               />
-
               <div
                 class="text-2xl font-semibold text-right absolute right-0 bottom-0"
               >
@@ -24,7 +25,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="px-4">
               <p class="mb-2 text-xl ml-1">
                 <fa
                   :icon="['fal', 'briefcase']"
@@ -210,14 +211,16 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-span-2 bg-white shadow-md p-4 rounded-md">
-          <div class="">
-            <p
-              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+        <div
+          class="col-span-3 lg:col-span-2 bg-white shadow-md xl:p-4 xl:rounded-md"
+        >
+          <div class="mt-20 lg:mt-0">
+            <h2
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium p-3 text-white title"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Expérience professionnelle</span>
-            </p>
+            </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base mx-3">
                 <span class="text-cv-500 font-semibold text-xl"
@@ -347,14 +350,14 @@
             </div>
           </div>
 
-          <div class="mt-12">
-            <p
-              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+          <div class="mt-20 lg:mt-12">
+            <h2
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium text-white p-3 title"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Diplômes</span>
-            </p>
-            <div class="mx-3 mt-5">
+            </h2>
+            <div class="mx-3 mt-10">
               <h5 class="text-base">
                 <span class="text-cv-500 font-semibold text-xl"
                   >BTS informatique de gestion</span
@@ -408,8 +411,11 @@ export default {}
 }
 
 .title {
-  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, 0.4);
-  clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);
+  box-shadow: 0px 15px 10px -6px rgb(0 0 0 / 40%);
+  /* -webkit-clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%); */
+  /* clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%); */
+
+  /*clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);*/
 }
 
 .clipped img {
