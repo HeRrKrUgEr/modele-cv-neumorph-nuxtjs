@@ -1,37 +1,35 @@
 <template>
   <div>
+    <header>
+      <div class="xl:container mx-auto"></div>
+    </header>
     <!-- Page Container -->
-    <div class="container mx-auto p-6">
+    <div class="xl:container mx-auto xl:p-6">
       <!-- The Grid -->
-      <div class="grid grid-cols-3 gap-4">
+      <div class="grid grid-cols-3 lg:gap-4">
         <!-- Left Column -->
-        <div class="col-span-1 bg-white shadow-md p-4 rounded-md">
-          <div class="overflow-hidden">
-            <div
-              class="relative p-1/3 mb-6 bg-gray-100 rounded-md overflow-hidden clipped"
-            >
-              <img
-                class="absolute top-0 left-0 w-full h-full object-cover"
-                src="img/vincent.jpg"
-              />
-
-              <div
-                class="text-2xl font-semibold text-right absolute right-0 bottom-0"
-              >
-                <h2 class="mr-3">
-                  Vincent <span class="text-cv-500">Chanliau</span>
-                </h2>
-              </div>
-            </div>
-
-            <div>
+        <div class="col-span-3 lg:col-span-1 h-full">
+          <div
+            id=""
+            class="id-card w-full bg-gray-100 flex flex-col justify-center align-middle"
+          >
+            <img class="absolute bottom-0 left-0" src="img/vincent.png" />
+            <h1 class="text-left absolute top-0 right-0 mt-6 mr-2">
+              <span class="prenom">Vincent</span>
+              <span class="nom">Chanliau</span>
+            </h1>
+          </div>
+          <div
+            class="overflow-hidden bg-white shadow-lg rounded-md lg:py-4 relative z-10"
+          >
+            <div class="px-4">
               <p class="mb-2 text-xl ml-1">
                 <fa
                   :icon="['fal', 'briefcase']"
                   class="fa-fw mr-3 text-cv-500"
                 ></fa
                 ><span class="text-sm font-semibold"
-                  >Développeur Web Full-Stack - Freelance</span
+                  >Développeur Full-Stack - Freelance</span
                 >
               </p>
               <p class="mb-2 text-xl ml-1">
@@ -210,14 +208,16 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-span-2 bg-white shadow-md p-4 rounded-md">
-          <div class="">
-            <p
-              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+        <div
+          class="col-span-3 lg:col-span-2 bg-white shadow-lg xl:p-4 xl:rounded-md"
+        >
+          <div class="mt-20 lg:mt-0">
+            <h2
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium p-3 text-white title"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Expérience professionnelle</span>
-            </p>
+            </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base mx-3">
                 <span class="text-cv-500 font-semibold text-xl"
@@ -231,7 +231,7 @@
               </h5>
               <h6 class="text-gray-500 font-light mb-2 ml-4">
                 <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Avril 2009 - Septembre 2020</span>
+                ><span>Depuis avril 2009</span>
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Responsable du développement informatique des agences de
@@ -347,14 +347,14 @@
             </div>
           </div>
 
-          <div class="mt-12">
-            <p
-              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium pl-3 pt-3 text-white pb-5 title"
+          <div class="mt-20 lg:mt-12">
+            <h2
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium text-white p-3 title"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Diplômes</span>
-            </p>
-            <div class="mx-3 mt-5">
+            </h2>
+            <div class="mx-3 mt-10">
               <h5 class="text-base">
                 <span class="text-cv-500 font-semibold text-xl"
                   >BTS informatique de gestion</span
@@ -393,23 +393,57 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      x: 0,
+      y: 0,
+      windowWidth: 0,
+      windowHeight: 0,
+    }
+  },
+  computed: {
+    coords() {
+      return {
+        ax: -(this.windowWidth / 2 - this.x) / 20,
+        ay: (this.windowHeight / 2 - this.y) / 10,
+      }
+    },
+  },
+  mounted() {
+    //document.addEventListener('mousemove', this.onMouseMove)
+  },
+  methods: {
+    onMouseMove(ev) {
+      this.x = ev.clientX
+      this.y = ev.clientY
+      this.windowWidth = window.innerWidth
+      this.windowHeight = window.innerHeight
+    },
+  },
+}
 </script>
 
-<style>
+<style lang="scss">
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-
+body {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
 .clipped {
   box-shadow: inset -1px -0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, 0.4);
-  clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);
+  box-shadow: 0px 15px 10px -6px rgba(0, 0, 0, 0.4);
+  /* -webkit-clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%); */
+  /* clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%); */
+
+  /*clip-path: polygon(100% 60%, 0% 100%, 0% 0%, 100% 0%);*/
 }
 
 .clipped img {
@@ -542,5 +576,34 @@ export default {}
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.5);
+}
+
+.id-card {
+  position: relative;
+  height: 200px;
+  img {
+    height: 100%;
+    filter: drop-shadow(-2px 6px 6px rgba(0, 0, 0, 1));
+  }
+
+  h1 {
+    z-index: 1;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+
+    span.prenom {
+      font-weight: 300;
+      display: block;
+      /*transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(-20deg)
+        translateX(100px) translateY(-60px) translatez(15px);*/
+    }
+    span.nom {
+      font-weight: 600;
+      display: block;
+      text-transform: uppercase;
+      /* transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(-20deg)
+        translateX(30px) translateY(0px) translatez(6px);*/
+    }
+  }
 }
 </style>

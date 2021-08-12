@@ -7,6 +7,7 @@
 <style>
 html,
 body {
-  @apply bg-gray-100  text-gray-800;
+  @apply bg-gray-100;
+  color: #212529;
 }
 </style>
