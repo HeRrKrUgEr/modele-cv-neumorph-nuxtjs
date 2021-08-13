@@ -214,17 +214,21 @@
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Responsable du développement informatique des agences de
-                tourisme <i>Un Monde autrement</i> pour les 8 pays franchisés du
-                réseau. Développement et maintenance des sites web des agences,
-                création d’un portail client, création de divers outils
-                informatiques utiles au bon fonctionnement du réseau.
-                Développement complet d'un ERP évolutif sur mesure répondant aux
-                besoins spécifiques de la compagnie ainsi qu'aux différentes
-                exigences et contraintes de chaque pays du réseau. Chargé de la
-                formation des nouveaux franchisés aux différents outils ainsi
-                que de la maintenance et du SAV quotidien par la suite. Chargé
-                de la mise en place et de la maintenance des serveurs dédiés
-                hébergeant les outils du réseau.
+                tourisme
+                <a target="_blank" href="https://www.unmondeautrement.com"
+                  ><i>Un Monde autrement</i></a
+                >
+                pour les 8 pays franchisés du réseau. Développement et
+                maintenance des sites web des agences, création d’un portail
+                client, création de divers outils informatiques utiles au bon
+                fonctionnement du réseau. Développement complet d'un ERP
+                évolutif sur mesure répondant aux besoins spécifiques de la
+                compagnie ainsi qu'aux différentes exigences et contraintes de
+                chaque pays du réseau. Chargé de la formation des nouveaux
+                franchisés aux différents outils ainsi que de la maintenance et
+                du SAV quotidien par la suite. Chargé de la mise en place et de
+                la maintenance des serveurs dédiés hébergeant les outils du
+                réseau.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
@@ -263,12 +267,16 @@
               </h6>
               <p class="font-light text-justify text-sm mx-2">
                 Responsable technique et commercial de la région Grand-Est pour
-                la société <i>KitView</i> spécialisée dans le développement
-                d'outils informatiques de gestion et d'imagerie médicale.
-                Installation et maintenance des systèmes informatiques dans les
-                cabinets médicaux de ses clients. Développement de plusieurs
-                outils pour la gestion du réseau et participation au
-                développement des différents logiciels de la gamme KitView.
+                la société
+                <a href="https://www.kitview.com" target="_blank"
+                  ><i>KitView</i></a
+                >
+                spécialisée dans le développement d'outils informatiques de
+                gestion et d'imagerie médicale. Installation et maintenance des
+                systèmes informatiques dans les cabinets médicaux de ses
+                clients. Développement de plusieurs outils pour la gestion du
+                réseau et participation au développement des différents
+                logiciels de la gamme KitView.
               </p>
               <hr class="mt-4 mb-6" />
             </div>
