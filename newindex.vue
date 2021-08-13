@@ -1,5 +1,58 @@
 <template>
   <div>
+    <header>
+      <div class="xl:container mx-auto py-4">
+        <div
+          class="flex bg-white flex-col lg:flex-row justify-start lg:justify-between nm-block w-full overflow-hidden"
+        >
+          <div id="" class="id-card flex justify-center align-middle">
+            <img class="" src="img/vincent.png" />
+            <h1 class="text-left mt-6 -ml-6 flex flex-col justify-between">
+              <div>
+                <span class="prenom">Vincent</span>
+                <span class="nom ml-2">Chanliau</span>
+                <span class="titre ml-6 mt-3"
+                  >Développeur <i>'full-stack'</i> de logiciels</span
+                >
+              </div>
+            </h1>
+          </div>
+          <div class="flex flex-col justify-between px-4">
+            <div class="text-xl">
+              <fa
+                :icon="['fal', 'birthday-cake']"
+                class="fa-fw mr-3 text-cv-500"
+              ></fa
+              ><span class="text-sm">14 août 1980 ({{ age }} ans)</span>
+            </div>
+            <div class="text-xl">
+              <fa :icon="['fal', 'home']" class="fa-fw mr-3 text-cv-500"></fa
+              ><span class="text-sm">Nancy / Strasbourg</span>
+            </div>
+
+            <div class="flex flex-col lg:flex-row flex-between">
+              <div class="text-xl">
+                <fa
+                  :icon="['fal', 'envelope']"
+                  class="fa-fw mr-3 text-cv-500"
+                ></fa
+                ><a href="mailto:vchanliau@gmail.com" class="text-sm"
+                  >vchanliau@gmail.com</a
+                >
+              </div>
+              <div class="text-xl">
+                <fa
+                  :icon="['fal', 'phone-rotary']"
+                  class="fa-fw mr-3 text-cv-500"
+                ></fa
+                ><a href="tel:+33611826310" class="text-sm">06.11.82.63.10</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- Page Container -->
     <div class="xl:container mx-auto xl:p-6">
       <!-- The Grid -->
@@ -10,7 +63,7 @@
         >
           <div
             id=""
-            class="id-card w-full flex flex-col justify-center align-middle overflow-hidden"
+            class="id-card w-full bg-gray-100 flex flex-col justify-center align-middle"
           >
             <img class="absolute bottom-0 left-0" src="img/vincent.png" />
             <h1 class="text-left absolute top-0 right-0 mt-6 mr-2">
@@ -18,65 +71,75 @@
               <span class="nom">Chanliau</span>
             </h1>
           </div>
-          <div
-            class="overflow-hidden relative z-10 px-4 flex flex-col flex-between"
-          >
-            <div>
-              <div class="mt-2 mb-4">
-                <span class="text-md"
-                  >Développeur <i>'Full-Stack'</i> de logiciels</span
+          <div class="overflow-hidden relative z-10">
+            <div class="px-4">
+              <p class="mb-2 text-xl ml-1">
+                <fa
+                  :icon="['fal', 'briefcase']"
+                  class="fa-fw mr-3 text-cv-500"
+                ></fa
+                ><span class="text-sm font-semibold"
+                  >Développeur Full-Stack - Freelance</span
                 >
-              </div>
-
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-10 mx-1"
-              >
-                <fa :icon="['fal', 'info']" class="fa-fw mr-3"></fa
-                ><span class="text-lg">Informations</span>
+              </p>
+              <p class="mb-2 text-xl ml-1">
+                <fa :icon="['fal', 'home']" class="fa-fw mr-3 text-cv-500"></fa
+                ><span class="text-sm">Nancy / Strasbourg</span>
+              </p>
+              <p class="mb-2 text-xl ml-1">
+                <fa
+                  :icon="['fal', 'envelope']"
+                  class="fa-fw mr-3 text-cv-500"
+                ></fa
+                ><a href="mailto:vchanliau@gmail.com" class="text-sm"
+                  >vchanliau@gmail.com</a
+                >
               </p>
 
-              <div class="flex flex-wrap mt-4">
-                <div class="mb-2 text-xl w-1/2">
-                  <fa
-                    :icon="['fal', 'birthday-cake']"
-                    class="fa-fw mr-3 text-cv-500"
-                  ></fa
-                  ><span class="text-sm">14 août 1980 ({{ age }} ans)</span>
+              <p class="mb-3 text-xl ml-1">
+                <fa
+                  :icon="['fal', 'phone-rotary']"
+                  class="fa-fw mr-3 text-cv-500"
+                ></fa
+                ><a href="tel:+33611826310" class="text-sm">06.11.82.63.10</a>
+              </p>
+
+              <a
+                class="inline-block button-download mb-3 border-0"
+                href="cv-vincentchanliau-2021.pdf"
+              >
+                <div class="button-download__content">
+                  <p class="button-download__text">
+                    <svg
+                      id="svgm"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fal"
+                      data-icon="filepdf"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      class="svg-inline--fa fa-filepdf fa-w-16"
+                    >
+                      <path
+                        fill="black"
+                        d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zm-22.6 22.7c2.1 2.1 3.5 4.6 4.2 7.4H256V32.5c2.8.7 5.3 2.1 7.4 4.2l83.9 83.9zM336 480H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16h176v104c0 13.3 10.7 24 24 24h104v304c0 8.8-7.2 16-16 16zm-22-171.2c-13.5-13.3-55-9.2-73.7-6.7-21.2-12.8-35.2-30.4-45.1-56.6 4.3-18 12-47.2 6.4-64.9-4.4-28.1-39.7-24.7-44.6-6.8-5 18.3-.3 44.4 8.4 77.8-11.9 28.4-29.7 66.9-42.1 88.6-20.8 10.7-54.1 29.3-58.8 52.4-3.5 16.8 22.9 39.4 53.1 6.4 9.1-9.9 19.3-24.8 31.3-45.5 26.7-8.8 56.1-19.8 82-24 21.9 12 47.6 19.9 64.6 19.9 27.7.1 28.9-30.2 18.5-40.6zm-229.2 89c5.9-15.9 28.6-34.4 35.5-40.8-22.1 35.3-35.5 41.5-35.5 40.8zM180 175.5c8.7 0 7.8 37.5 2.1 47.6-5.2-16.3-5-47.6-2.1-47.6zm-28.4 159.3c11.3-19.8 21-43.2 28.8-63.7 9.7 17.7 22.1 31.7 35.1 41.5-24.3 4.7-45.4 15.1-63.9 22.2zm153.4-5.9s-5.8 7-43.5-9.1c41-3 47.7 6.4 43.5 9.1z"
+                        class=""
+                      ></path></svg
+                    >Télécharger mon CV
+                  </p>
                 </div>
-                <div class="mb-3 text-xl w-1/2">
-                  <fa
-                    :icon="['fal', 'home']"
-                    class="fa-fw mr-3 text-cv-500"
-                  ></fa
-                  ><span class="text-sm">Nancy / Strasbourg</span>
-                </div>
-                <div class="w-1/2">
-                  <a href="mailto:vchanliau@gmail.com" class="fa-link text-sm"
-                    ><fa
-                      :icon="['fal', 'envelope']"
-                      class="fa-fw mr-3 text-cv-500 text-xl"
-                    ></fa
-                    >vchanliau@gmail.com</a
-                  >
-                </div>
-                <div class="w-1/2">
-                  <a href="tel:+33611826310" class="fa-link text-sm">
-                    <fa
-                      :icon="['fal', 'phone-rotary']"
-                      class="fa-fw mr-3 text-cv-500 text-xl"
-                    ></fa
-                    >06.11.82.63.10</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div>
+              </a>
+
+              <hr />
+
               <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
               </p>
+
               <p class="mt-4 text-base mb-2 font-light ml-2">
                 <fa
                   :icon="['fal', 'asterisk']"
@@ -103,17 +166,16 @@
                   :icon="['fal', 'asterisk']"
                   class="mr-2 text-cv-500 text-xs"
                 ></fa
-                >Administration de serveurs <i>bare metal</i> et
-                <i>cloud</i>
+                >Administration de serveurs <i>bare metal</i> et <i>cloud</i>
               </p>
-            </div>
-            <div>
+
               <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Frameworks et CMS</span>
               </p>
+
               <div class="grid grid-cols-6 gap-3 mt-4 justify-center">
                 <div class=""><img src="img/mnet.png" /></div>
                 <div class=""><img src="img/vuejs.png" /></div>
@@ -122,12 +184,14 @@
                 <div class=""><img src="img/laravel.png" /></div>
                 <div class=""><img src="img/wordpress.png" /></div>
               </div>
+
               <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-10 mx-1"
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langages informatiques</span>
               </p>
+
               <div class="grid grid-cols-7 gap-3 mt-6 justify-center">
                 <div class=""><img src="img/html.png" /></div>
                 <div class=""><img src="img/css.png" /></div>
@@ -137,30 +201,36 @@
                 <div class=""><img src="img/csharp.png" /></div>
                 <div class=""><img src="img/python.png" /></div>
               </div>
-            </div>
-            <div>
+
               <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+                class="text-xl text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1"
               >
                 <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
-                ><span class="text-lg">Langues étrangères</span>
+                ><span class="text-lg">Langues</span>
               </p>
+
+              <div class="flex flex-row items-center justify-start ml-4 mt-6">
+                <img src="img/france.png" class="mr-3 shadow-md" />
+                <p class="text-base font-light">Français (langue maternelle)</p>
+              </div>
+
               <div class="flex flex-row items-center justify-start ml-4 mt-4">
                 <img src="img/uk.png" class="mr-3 shadow-md" />
                 <p class="text-base font-light">Anglais (bilingue)</p>
               </div>
+
               <div class="flex flex-row items-center justify-start ml-4 mt-4">
                 <img src="img/indonesia.png" class="mr-3 shadow-md" />
                 <p class="text-base font-light">Indonésien (intermédiaire)</p>
               </div>
+
               <div class="flex flex-row items-center justify-start ml-4 mt-4">
                 <img src="img/spain.png" class="mr-3 shadow-md" />
                 <p class="text-base font-light">Espagnol (basique)</p>
               </div>
-            </div>
-            <div>
+
               <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1 mb-4"
+                class="text-lg text-cv-500 uppercase tracking-wide font-medium mt-10 mx-1 mb-4"
               >
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
@@ -182,6 +252,7 @@
               </p>
             </div>
           </div>
+          <br />
 
           <!-- End Left Column -->
         </div>
@@ -192,7 +263,7 @@
         >
           <div class="mt-20 lg:mt-0">
             <h2
-              class="text-3xl bg-cv-500 rounded-md uppercase tracking-wide font-medium p-3 text-white title"
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium p-3 text-white title"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Expérience professionnelle</span>
@@ -328,7 +399,7 @@
 
           <div class="mt-20 lg:mt-12">
             <h2
-              class="text-3xl bg-cv-500 rounded-md uppercase tracking-wide font-medium text-white p-3 title"
+              class="text-3xl bg-cv-500 uppercase tracking-wide font-medium text-white p-3 title"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Diplômes</span>
@@ -597,21 +668,6 @@ body {
       display: block;
       font-size: 1.3rem;
       letter-spacing: 0;
-    }
-  }
-}
-
-.fa-link {
-  width: 100%;
-  transition: all 0.25s linear;
-  border-radius: 5px;
-  svg {
-    transition: all 0.25s linear;
-  }
-  &:hover {
-    color: #007fab;
-    svg {
-      transform: scale(1.1) translatex(5px);
     }
   }
 }

@@ -57,6 +57,7 @@ export default {
               'faPhoneRotary',
               'faEnvelope',
               'faBriefCase',
+              'faBirthdayCake',
               'faHome',
               'faAsterisk',
               'faGlobe',
@@ -67,6 +68,7 @@ export default {
               'faGraduationCap',
               'faCog',
               'faFilePdf',
+              'faInfo',
             ],
           },
           {
