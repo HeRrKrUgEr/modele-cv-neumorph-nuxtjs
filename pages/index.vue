@@ -6,47 +6,42 @@
       <div class="grid grid-cols-3 lg:gap-4">
         <!-- Left Column -->
         <div
-          class="col-span-3 lg:col-span-1 h-full bg-white shadow-lg rounded-md"
+          class="col-span-3 lg:col-span-1 h-full bg-gray-300 shadow-neumorph rounded-lg"
         >
           <div
             id=""
             class="id-card w-full flex flex-col justify-center align-middle overflow-hidden"
           >
             <img class="absolute bottom-0 left-0" src="img/vincent.png" />
-            <h1 class="text-left absolute top-0 right-0 mt-6 mr-2">
-              <span class="prenom">Vincent</span>
-              <span class="nom">Chanliau</span>
+            <h1 class="text-left absolute top-0 right-0 mt-6 mr-4">
+              <span class="prenom -ml-6">Vincent</span>
+              <span class="nom -ml-3">Chanliau</span>
+              <span class="titre -ml-6 my-1"
+                >Développeur <i>'Full-Stack'</i></span
+              >
             </h1>
           </div>
-          <div
-            class="overflow-hidden relative z-10 px-4 flex flex-col flex-between"
-          >
+          <div class="overflow-hidden relative z-10 flex flex-col flex-between">
             <div>
-              <div class="mt-2 mb-4">
-                <span class="text-md"
-                  >Développeur <i>'Full-Stack'</i> de logiciels</span
-                >
-              </div>
-
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-10 mx-1"
+              <div
+                class="text-2xl text-cv-accent bg-gray-300 px-2 uppercase tracking-wide font-semibold mt-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'info']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Informations</span>
-              </p>
+              </div>
 
-              <div class="flex flex-wrap mt-4">
+              <div class="flex flex-wrap mt-4 px-4">
                 <div class="mb-2 text-xl w-1/2">
                   <fa
                     :icon="['fal', 'birthday-cake']"
-                    class="fa-fw mr-3 text-cv-500"
+                    class="fa-fw mr-3 text-cv-accent"
                   ></fa
                   ><span class="text-sm">14 août 1980 ({{ age }} ans)</span>
                 </div>
                 <div class="mb-3 text-xl w-1/2">
                   <fa
                     :icon="['fal', 'home']"
-                    class="fa-fw mr-3 text-cv-500"
+                    class="fa-fw mr-3 text-cv-accent"
                   ></fa
                   ><span class="text-sm">Nancy / Strasbourg</span>
                 </div>
@@ -54,7 +49,7 @@
                   <a href="mailto:vchanliau@gmail.com" class="fa-link text-sm"
                     ><fa
                       :icon="['fal', 'envelope']"
-                      class="fa-fw mr-3 text-cv-500 text-xl"
+                      class="fa-fw mr-3 text-cv-accent text-xl"
                     ></fa
                     >vchanliau@gmail.com</a
                   >
@@ -63,7 +58,7 @@
                   <a href="tel:+33611826310" class="fa-link text-sm">
                     <fa
                       :icon="['fal', 'phone-rotary']"
-                      class="fa-fw mr-3 text-cv-500 text-xl"
+                      class="fa-fw mr-3 text-cv-accent text-xl"
                     ></fa
                     >06.11.82.63.10</a
                   >
@@ -71,50 +66,52 @@
               </div>
             </div>
             <div>
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+              <div
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
-              </p>
-              <p class="mt-4 text-base mb-2 font-light ml-2">
-                <fa
-                  :icon="['fal', 'asterisk']"
-                  class="mr-2 text-cv-500 text-xs"
-                ></fa
-                >Analyse et gestion de projets informatiques
-              </p>
-              <p class="text-base mb-2 font-light">
-                <fa
-                  :icon="['fal', 'asterisk']"
-                  class="mr-2 text-cv-500 text-xs"
-                ></fa
-                >Développement d'applications et outils ERP
-              </p>
-              <p class="text-base mb-2 font-light ml-2">
-                <fa
-                  :icon="['fal', 'asterisk']"
-                  class="mr-2 text-cv-500 text-xs"
-                ></fa
-                >Développement d'applications et sites Web
-              </p>
-              <p class="text-base mb-2 font-light">
-                <fa
-                  :icon="['fal', 'asterisk']"
-                  class="mr-2 text-cv-500 text-xs"
-                ></fa
-                >Administration de serveurs <i>bare metal</i> et
-                <i>cloud</i>
-              </p>
+              </div>
+              <div class="px-4">
+                <p class="mt-4 text-base mb-2 font-light ml-2">
+                  <fa
+                    :icon="['fal', 'asterisk']"
+                    class="mr-2 text-cv-accent text-xs"
+                  ></fa
+                  >Analyse et gestion de projets informatiques
+                </p>
+                <p class="text-base mb-2 font-light">
+                  <fa
+                    :icon="['fal', 'asterisk']"
+                    class="mr-2 text-cv-accent text-xs"
+                  ></fa
+                  >Développement d'applications et outils ERP
+                </p>
+                <p class="text-base mb-2 font-light ml-2">
+                  <fa
+                    :icon="['fal', 'asterisk']"
+                    class="mr-2 text-cv-accent text-xs"
+                  ></fa
+                  >Développement d'applications et sites Web
+                </p>
+                <p class="text-base mb-2 font-light">
+                  <fa
+                    :icon="['fal', 'asterisk']"
+                    class="mr-2 text-cv-accent text-xs"
+                  ></fa
+                  >Administration de serveurs <i>bare metal</i> et
+                  <i>cloud</i>
+                </p>
+              </div>
             </div>
             <div>
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+              <div
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Frameworks et CMS</span>
-              </p>
-              <div class="grid grid-cols-6 gap-3 mt-4 justify-center">
+              </div>
+              <div class="grid grid-cols-6 gap-3 mt-4 justify-center px-4">
                 <div class=""><img src="img/mnet.png" /></div>
                 <div class=""><img src="img/vuejs.png" /></div>
                 <div class=""><img src="img/tailwind.png" /></div>
@@ -122,13 +119,13 @@
                 <div class=""><img src="img/laravel.png" /></div>
                 <div class=""><img src="img/wordpress.png" /></div>
               </div>
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-10 mx-1"
+              <div
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-10 px-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langages informatiques</span>
-              </p>
-              <div class="grid grid-cols-7 gap-3 mt-6 justify-center">
+              </div>
+              <div class="grid grid-cols-7 gap-3 mt-6 justify-center px-4">
                 <div class=""><img src="img/html.png" /></div>
                 <div class=""><img src="img/css.png" /></div>
                 <div class=""><img src="img/javascript.png" /></div>
@@ -139,47 +136,54 @@
               </div>
             </div>
             <div>
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1"
+              <div
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langues étrangères</span>
-              </p>
-              <div class="flex flex-row items-center justify-start ml-4 mt-4">
-                <img src="img/uk.png" class="mr-3 shadow-md" />
-                <p class="text-base font-light">Anglais (bilingue)</p>
               </div>
-              <div class="flex flex-row items-center justify-start ml-4 mt-4">
-                <img src="img/indonesia.png" class="mr-3 shadow-md" />
-                <p class="text-base font-light">Indonésien (intermédiaire)</p>
-              </div>
-              <div class="flex flex-row items-center justify-start ml-4 mt-4">
-                <img src="img/spain.png" class="mr-3 shadow-md" />
-                <p class="text-base font-light">Espagnol (basique)</p>
+              <div class="px-4">
+                <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                  <img src="img/uk.png" class="mr-3 shadow-md" />
+                  <p class="text-base font-light">Anglais (bilingue)</p>
+                </div>
+                <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                  <img src="img/indonesia.png" class="mr-3 shadow-md" />
+                  <p class="text-base font-light">Indonésien (intermédiaire)</p>
+                </div>
+                <div class="flex flex-row items-center justify-start ml-4 mt-4">
+                  <img src="img/spain.png" class="mr-3 shadow-md" />
+                  <p class="text-base font-light">Espagnol (basique)</p>
+                </div>
               </div>
             </div>
             <div>
-              <p
-                class="text-2xl text-cv-500 uppercase tracking-wide font-semibold mt-16 mx-1 mb-4"
+              <div
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm mb-4"
               >
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
-              </p>
-              <p
-                class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center"
-              >
-                <fa
-                  :icon="['fal', 'golfclub']"
-                  class="fa-fw mr-2 text-white"
-                ></fa
-                ><span class="text-sm font-medium">Golf</span>
-              </p>
-              <p
-                class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-500 text-white rounded-xl text-center"
-              >
-                <fa :icon="['fal', 'piano']" class="fa-fw mr-2 text-white"></fa
-                ><span class="text-sm font-medium">Piano</span>
-              </p>
+              </div>
+              <div class="px-4">
+                <p
+                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                >
+                  <fa
+                    :icon="['fal', 'golfclub']"
+                    class="fa-fw mr-2 text-white"
+                  ></fa
+                  ><span class="text-sm font-medium">Golf</span>
+                </p>
+                <p
+                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                >
+                  <fa
+                    :icon="['fal', 'piano']"
+                    class="fa-fw mr-2 text-white"
+                  ></fa
+                  ><span class="text-sm font-medium">Piano</span>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -188,18 +192,18 @@
 
         <!-- Right Column -->
         <div
-          class="col-span-3 lg:col-span-2 bg-white shadow-lg xl:p-4 xl:rounded-md"
+          class="col-span-3 lg:col-span-2 bg-gray-300 xl:p-4 xl:rounded-md shadow-neumorph"
         >
           <div class="mt-20 lg:mt-0">
             <h2
-              class="text-3xl bg-cv-500 rounded-md uppercase tracking-wide font-medium p-3 text-white title"
+              class="text-3xl bg-gray-300 shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Expérience professionnelle</span>
             </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Directeur technique</span
                 >
                 /
@@ -234,7 +238,7 @@
             </div>
             <div class="mx-3">
               <h5 class="ext-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Chef de projet</span
                 >
                 / Société Big Foot / Bali Indonésie
@@ -254,7 +258,7 @@
             </div>
             <div class="mx-3">
               <h5 class="text-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Responsable commercial</span
                 >
                 /
@@ -282,7 +286,7 @@
             </div>
             <div class="mx-3">
               <h5 class="text-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Développeur</span
                 >
                 / Freelance / Montréal, Canada
@@ -298,7 +302,7 @@
             </div>
             <div class="mx-3">
               <h5 class="text-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Développeur Junior</span
                 >
                 / Diatélic / Nancy, France
@@ -318,7 +322,7 @@
             </div>
             <div class="mx-3">
               <h5 class="text-base mx-3">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Administrateur Réseau</span
                 >
                 / Qualipse / Strasbourg, France
@@ -336,14 +340,14 @@
 
           <div class="mt-20 lg:mt-12">
             <h2
-              class="text-3xl bg-cv-500 rounded-md uppercase tracking-wide font-medium text-white p-3 title"
+              class="text-3xl bg-gray-300 shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
               ><span class="text-2xl">Diplômes</span>
             </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >BTS informatique de gestion</span
                 >
                 / IESA / Strasbourg, France
@@ -356,7 +360,7 @@
             </div>
             <div class="mx-3">
               <h5 class="text-base">
-                <span class="text-cv-500 font-semibold text-xl"
+                <span class="text-cv-accent font-semibold text-xl"
                   >Baccalauréat section scientifique</span
                 >
                 / Institut Horizon / Strasbourg, France
@@ -443,134 +447,6 @@ body {
   clip-path: polygon(100% 75%, 0% 100%, 0% 0%, 100% 0%);
 }
 
-.button-download {
-  position: relative;
-  padding: 0;
-  border: 2px solid #888888;
-  outline: none;
-  background-color: #f4f5f6;
-  border-radius: 2px;
-  box-shadow: -3px -5px 10px #ffffff, -3px -5px 7px #ffffff,
-    -5px 0px 10px #ffffff, 2px 3px 5px rgba(0, 0, 0, 0.2);
-  transition: 0.13s ease-in-out;
-  cursor: pointer;
-}
-.button-download:hover {
-  box-shadow: none;
-}
-.button-download:hover .button-download__content {
-  box-shadow: none;
-}
-.button-download:hover .button-download__content .button-download__text,
-.button-download:hover .button-download__content svg {
-  transform: translate3d(0px, 0px, 0px);
-}
-.button-download__content {
-  position: relative;
-  display: grid;
-  padding: 2px 0;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  /*grid-template-rows: 1fr 1fr;*/
-  box-shadow: inset 0px -2px 0px #dddddd, 0px -2px 0px #f4f5f6;
-  border-radius: 2px;
-  transition: 0.13s ease-in-out;
-  z-index: 1;
-}
-.button-download__text {
-  position: relative;
-  transform: translate3d(0px, -2px, 0px);
-  margin: 0;
-  align-self: end;
-  grid-column: 2/5;
-  /*grid-row: 2;*/
-  text-align: center;
-  font-size: 14px;
-  /*line-height: 31px;*/
-  background-color: #888888;
-  color: transparent;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  transition: 0.13s ease-in-out;
-}
-
-.button-download__content .svg-wrap {
-  position: absolute;
-  transform: translate3d(0px, -4px, 0px);
-  font-size: 18px;
-  margin: 4px 8px;
-  background-color: rgba(234, 24, 15, 0.8);
-
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
-  transition: 0.13s ease-in-out;
-}
-
-.button-download__content .svg-wrap svg {
-  color: transparent;
-  /*text-shadow: 2px 2px 3px rgba(234, 24, 15, 0.8);*/
-}
-.button-download__content svg path {
-  fill: transparent;
-}
-
-.social-buttons {
-  margin: 30px 10px 40px;
-}
-
-.social-buttons a {
-  display: inline-flex;
-  text-decoration: none;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: 0 8px;
-}
-
-.social-buttons a::before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(
-    45deg,
-    rgba(0, 127, 171, 0.5),
-    rgba(0, 127, 171, 1)
-  );
-  border-radius: 50%;
-
-  transition: 0.265s ease-out;
-}
-
-.social-buttons a:hover::before {
-  transform: scale(0);
-}
-
-.social-buttons a svg {
-  z-index: 1;
-  transition: 0.265s ease-out;
-}
-
-.social-buttons a:hover svg {
-  background: linear-gradient(
-    45deg,
-    rgba(0, 127, 171, 0.5),
-    rgba(0, 127, 171, 1)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(1.5);
-}
-
 .id-card {
   position: relative;
   height: 200px;
@@ -579,17 +455,18 @@ body {
     //filter: drop-shadow(-2px 6px 6px rgba(0, 0, 0, 1));
     -webkit-filter: blur(50px);
     filter: blur(50px);
-    animation: 3s linear 2s forwards unblur;
+    animation: 2s linear 1s forwards unblur;
   }
 
   h1 {
     z-index: 1;
     font-size: 1.7rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
     span.prenom {
       font-weight: 300;
       display: block;
+      line-height: 1;
       /*transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(-20deg)
         translateX(100px) translateY(-60px) translatez(15px);*/
     }
@@ -597,14 +474,15 @@ body {
       font-weight: 600;
       display: block;
       text-transform: uppercase;
+      line-height: 1;
       /* transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg) skew(-20deg)
         translateX(30px) translateY(0px) translatez(6px);*/
     }
     span.titre {
-      font-weight: 500;
+      font-weight: 400;
       display: block;
-      font-size: 1.3rem;
-      letter-spacing: 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
     }
   }
 }
