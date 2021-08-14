@@ -83,9 +83,9 @@ module.exports = {
       },
       boxShadow: {
         neumorph:
-          '-8px -8px 14px rgb(255 255 255 / 40%), 6px 6px 10px 0px rgb(0 0 0 / 20%)',
+          '-8px -8px 24px rgb(255 255 255 / 70%), 6px 6px 10px 0px rgb(0 0 0 / 20%)',
         'neumorph-sm':
-          '0px -4px 6px -4px rgb(255 255 255 / 85%), 0px 4px 8px -4px rgb(0 0 0 / 20%)',
+          '0px -6px 8px -6px rgb(255 255 255 / 70%), 0px 6px 8px -6px rgb(0 0 0 / 20%)',
         'neumorph-md':
           '0px -8px 10px -8px rgb(255 255 255 / 80%), 0px 8px 10px -8px rgb(0 0 0 / 20%)',
         'under-lg': '0px 15px 10px -6px rgba(0, 0, 0, 0.3);',
