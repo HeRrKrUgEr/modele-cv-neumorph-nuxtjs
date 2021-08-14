@@ -221,7 +221,7 @@
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
               </div>
-              <div class="px-4">
+              <div class="px-4 pb-4">
                 <p
                   class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
                 >
