@@ -30,7 +30,7 @@
                 ><span class="text-lg">Informations</span>
               </div>
 
-              <div class="flex flex-wrap mt-4 px-4">
+              <div class="flex flex-wrap mt-4 px-2 md:px-4">
                 <div class="mb-2 text-xl w-1/2">
                   <fa
                     :icon="['fal', 'birthday-cake']"
@@ -73,7 +73,6 @@
                   class="social-link"
                   data-color="#4267B2"
                 >
-                  <span> </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                     <path
                       d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
@@ -88,7 +87,6 @@
                   data-color="#2867B2"
                   title="linkedin"
                 >
-                  <span> </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
                       d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
@@ -103,7 +101,6 @@
                   class="social-link"
                   data-color="#c9510c"
                 >
-                  <span> </span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
                     <path
                       d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
@@ -129,7 +126,7 @@
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
               </div>
-              <div class="px-4">
+              <div class="px-2 md:px-4">
                 <p class="mt-4 text-base mb-2 font-light ml-2">
                   <fa
                     :icon="['fal', 'asterisk']"
@@ -168,7 +165,9 @@
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Frameworks et CMS</span>
               </div>
-              <div class="grid grid-cols-6 gap-3 mt-4 justify-center px-4">
+              <div
+                class="grid grid-cols-6 gap-3 mt-4 justify-center px-2 md:px-4"
+              >
                 <div class=""><img src="img/mnet.png" /></div>
                 <div class=""><img src="img/vuejs.png" /></div>
                 <div class=""><img src="img/tailwind.png" /></div>
@@ -182,7 +181,9 @@
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langages informatiques</span>
               </div>
-              <div class="grid grid-cols-7 gap-3 mt-6 justify-center px-4">
+              <div
+                class="grid grid-cols-7 gap-3 mt-6 justify-center px-2 md:px-4"
+              >
                 <div class=""><img src="img/html.png" /></div>
                 <div class=""><img src="img/css.png" /></div>
                 <div class=""><img src="img/javascript.png" /></div>
@@ -199,7 +200,7 @@
                 <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langues étrangères</span>
               </div>
-              <div class="px-4">
+              <div class="px-2 md:px-4">
                 <div class="flex flex-row items-center justify-start ml-4 mt-4">
                   <img src="img/uk.png" class="mr-3 shadow-md" />
                   <p class="text-base font-light">Anglais (bilingue)</p>
@@ -221,7 +222,7 @@
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
               </div>
-              <div class="px-4 pb-4">
+              <div class="px-2 md:px-4 pb-4">
                 <p
                   class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
                 >
@@ -480,7 +481,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
@@ -518,14 +519,15 @@ body {
   color: rgba(0, 127, 171, 0.6);
   text-shadow: 1px 1px 1px #fff, 0px 0px 0px #000;
   transition: all 0.25s linear;
-  margin: 1rem auto;
+  margin: 1rem auto 0;
   line-height: 1;
   border-radius: 15px;
-
+  transition: all 0.2s ease-in-out;
   &:hover {
     color: rgba(0, 127, 171, 0.3);
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.7),
-      inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+      1px 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
   }
   &:active {
     box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.7),
@@ -602,38 +604,27 @@ body {
   --bg-color: attr(data-color);
   margin: 0.5rem 1rem;
   position: relative;
+  display: block;
   width: 45px;
   height: 45px;
   border-radius: 50%;
   padding: 0.65rem;
   background: #e2e8f0;
+  perspective: 1500px;
+
+  -webkit-transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7),
     5px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.35s linear;
 
-  span {
-    display: block;
-    position: absolute;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: rotate(-45deg);
-    //box-shadow: inset 0px -25px 15px -20px rgba(0, 0, 0, 0.35);
-    /*background: linear-gradient(
-      -45deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(255, 255, 255, 0.3) 50%
-    );*/
-    -webkit-transition: box-shadow 0.25s linear;
-    transition: box-shadow 0.25s linear;
-  }
   svg {
-    transition: opacity 0.25s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
     width: 100%;
     height: 100%;
-    opacity: 0.6;
+    opacity: 0.8;
+    transform: scale(1.05) translateY(0px);
+
     path {
       //fill: rgba(255, 255, 255, 0.5);
       stroke: rgba(0, 127, 171, 0.2);
@@ -657,18 +648,19 @@ body {
   }
   &:hover {
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.7),
-      inset 1px 1px 2px rgba(0, 0, 0, 0.2);
-
+      1px 1px 2px rgba(0, 0, 0, 0.2);
     svg {
       opacity: 1;
+      transform: translateY(1px);
     }
   }
   &:active {
-    span {
-      box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.2);
-    }
     box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.7),
       inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+    svg {
+      transform: scale(0.95) translateY(2px);
+      opacity: 0.8;
+    }
   }
 }
 
