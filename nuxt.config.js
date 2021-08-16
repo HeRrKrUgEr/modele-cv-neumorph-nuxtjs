@@ -70,6 +70,7 @@ export default {
               'faCog',
               'faFilePdf',
               'faInfo',
+              'faCloudDownload',
             ],
           },
           {
