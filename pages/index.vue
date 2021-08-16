@@ -6,13 +6,16 @@
       <div class="grid grid-cols-3 lg:gap-8">
         <!-- Left Column -->
         <div
-          class="col-span-3 lg:col-span-1 h-full bg-gray-300 neu-left rounded-lg"
+          class="col-span-3 lg:col-span-1 h-full bg-main neu-left rounded-lg"
         >
           <div
             id=""
             class="id-card w-full flex flex-col justify-center align-middle overflow-hidden"
           >
-            <img class="absolute bottom-0 left-0" src="img/vincent.png" />
+            <img
+              class="absolute bottom-0 left-0 -ml-12"
+              src="img/vincent.png"
+            />
             <h1 class="text-left absolute top-0 right-0 mt-6 mr-4">
               <span class="prenom -ml-6">Vincent</span>
               <span class="nom -ml-3">Chanliau</span>
@@ -24,115 +27,133 @@
           <div class="overflow-hidden relative z-10 flex flex-col flex-between">
             <div>
               <div
-                class="text-2xl text-cv-accent bg-gray-300 px-2 uppercase tracking-wide font-semibold mt-2 shadow-neumorph-sm"
+                class="text-2xl text-cv-accent bg-main px-2 uppercase tracking-wide font-semibold mt-2 shadow-neumorph-sm"
               >
                 <fa :icon="['fal', 'info']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Informations</span>
               </div>
 
-              <div class="flex flex-col mt-4 px-2 md:px-8">
+              <div
+                class="flex flex-col sm:flex-row sm:flex-wrap lg:flex-col mt-4 px-2 lg:px-8"
+              >
                 <div
-                  class="mb-4 text-2xl inline-flex justify-start align-middle"
+                  class="mb-4 text-2xl inline-flex justify-start sm:justify-center align-middle w-full sm:w-1/2"
                 >
                   <fa
                     :icon="['fal', 'birthday-cake']"
                     class="fa-fw mr-3 text-cv-accent"
                   ></fa>
 
-                  <span class="text-lg font-light"
+                  <span class="text-base font-light"
                     >14 août 1980 - {{ age }} ans</span
                   >
                 </div>
                 <div
-                  class="mb-4 text-2xl inline-flex justify-start align-middle"
+                  class="mb-4 text-2xl inline-flex justify-start sm:justify-center align-middle w-full sm:w-1/2"
                 >
                   <fa
                     :icon="['fal', 'home']"
                     class="fa-fw mr-3 text-cv-accent"
                   ></fa>
 
-                  <span class="text-lg font-light">Alsace - Lorraine</span>
+                  <span class="text-base font-light">Alsace - Lorraine</span>
                 </div>
-                <div class="mb-4">
+                <div
+                  class="mb-4 w-full sm:w-1/2 inline-flex justify-start sm:justify-center"
+                >
                   <a
                     href="mailto:vchanliau@gmail.com"
-                    class="fa-link text-lg inline-flex justify-start align-middle"
+                    class="fa-link text-lg align-middle"
                   >
                     <fa
                       :icon="['fal', 'envelope']"
                       class="fa-fw mr-3 text-cv-accent text-2xl"
                     ></fa>
 
-                    <span class="text-lg">vchanliau@gmail.com</span></a
+                    <span class="text-base">vchanliau@gmail.com</span></a
                   >
                 </div>
-                <div class="mb-4">
+                <div
+                  class="mb-4 inline-flex w-full sm:w-1/2 justify-start sm:justify-center"
+                >
                   <a href="tel:+33611826310" class="fa-link text-lg">
                     <fa
                       :icon="['fal', 'phone-rotary']"
                       class="fa-fw mr-3 text-cv-accent text-2xl"
                     ></fa>
 
-                    <span class="text-lg">06.11.82.63.10</span></a
+                    <span class="text-base">06.11.82.63.10</span></a
                   >
                 </div>
-                <div class="mb-4">
+                <div
+                  class="mb-4 inline-flex w-full sm:w-1/2 justify-start sm:justify-center lg"
+                >
                   <a
                     href="cv-vincentchanliau-2021.pdf"
-                    class="fa-link text-lg inline-flex justify-start align-middle"
+                    class="fa-link text-lg align-middle"
                   >
                     <fa
                       :icon="['fal', 'cloud-download']"
                       class="fa-fw mr-3 text-cv-accent text-2xl"
                     ></fa>
 
-                    <span class="text-lg">Télécharger mon CV</span></a
+                    <span class="text-base">Télécharger mon CV</span></a
                   >
                 </div>
-              </div>
-
-              <div class="flex justify-center mt-2 px-2 md:px-8">
-                <a
-                  href="https://www.facebook.com/vincent.chanliau/"
-                  target="_blank"
-                  role="button"
-                  class="social-link"
-                  data-color="#4267B2"
+                <div
+                  class="mb-4 inline-flex w-full sm:w-1/2 justify-start sm:justify-center"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                    <path
-                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/vincent-chanliau"
-                  target="_blank"
-                  role="button"
-                  class="social-link"
-                  data-color="#2867B2"
-                  title="linkedin"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path
-                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="https://github.com/HeRrKrUgEr"
-                  target="_blank"
-                  title="github"
-                  role="button"
-                  class="social-link"
-                  data-color="#c9510c"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512">
-                    <path
-                      d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
-                    />
-                  </svg>
-                </a>
+                  <a
+                    href="https://www.facebook.com/vincent.chanliau/"
+                    target="_blank"
+                    role="button"
+                    class="social-link sm:w-1/3"
+                    data-color="#4267B2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/vincent-chanliau"
+                    target="_blank"
+                    role="button"
+                    class="social-link sm:w-1/3"
+                    data-color="#2867B2"
+                    title="linkedin"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://github.com/HeRrKrUgEr"
+                    target="_blank"
+                    title="github"
+                    role="button"
+                    class="social-link sm:w-1/3"
+                    data-color="#c9510c"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 480 512"
+                    >
+                      <path
+                        d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <div>
@@ -142,7 +163,7 @@
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
               </div>
-              <div class="px-2 md:px-4">
+              <div class="px-2 sm:px-8 lg:px-8">
                 <p class="mt-4 text-base mb-2 font-light ml-2">
                   <fa
                     :icon="['fal', 'asterisk']"
@@ -182,7 +203,7 @@
                 ><span class="text-lg">Frameworks et CMS</span>
               </div>
               <div
-                class="grid grid-cols-6 gap-3 mt-4 justify-center px-2 md:px-4"
+                class="grid grid-cols-6 gap-3 mt-4 justify-center px-2 lg:px-4"
               >
                 <div class=""><img src="img/mnet.png" /></div>
                 <div class=""><img src="img/vuejs.png" /></div>
@@ -198,7 +219,7 @@
                 ><span class="text-lg">Langages informatiques</span>
               </div>
               <div
-                class="grid grid-cols-7 gap-3 mt-6 justify-center px-2 md:px-4"
+                class="grid grid-cols-7 gap-3 mt-6 justify-center px-2 lg:px-4"
               >
                 <div class=""><img src="img/html.png" /></div>
                 <div class=""><img src="img/css.png" /></div>
@@ -216,7 +237,7 @@
                 <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Langues étrangères</span>
               </div>
-              <div class="px-2 md:px-8">
+              <div class="px-2 lg:px-8">
                 <div class="flex flex-row items-center justify-start mt-4">
                   <img src="img/uk.png" class="mr-3 shadow-md" />
                   <p class="text-base font-light">Anglais (bilingue)</p>
@@ -238,7 +259,7 @@
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
               </div>
-              <div class="px-2 md:px-8 pb-8">
+              <div class="px-2 lg:px-8 pb-8">
                 <p
                   class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
                 >
@@ -266,31 +287,44 @@
 
         <!-- Right Column -->
         <div
-          class="col-span-3 lg:col-span-2 bg-gray-300 xl:p-4 xl:rounded-md neu-left"
+          class="col-span-3 lg:col-span-2 bg-main xl:p-4 xl:rounded-md neu-left"
         >
           <div class="mt-20 lg:mt-0">
             <h2
-              class="text-3xl bg-gray-300 shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
+              class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
-              ><span class="text-2xl">Expérience professionnelle</span>
+              ><span class="text-md sm:text-xl lg:text-2xl"
+                >Expérience professionnelle</span
+              >
             </h2>
+
             <div class="mx-3 mt-10">
-              <h5 class="text-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Directeur technique</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <a href="https://www.unmondeautrement.com" target="_blank">
+                    <span class="text-cv-accent font-semibold text-xl block"
+                      >Un Monde Autrement</span
+                    ></a
+                  >
+
+                  Directeur technique
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                /
-                <a href="https://www.unmondeautrement.com" target="_blank"
-                  >Un Monde Autrement</a
-                >
-                / Bali, Indonésie
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Depuis avril 2009</span>
-              </h6>
-              <p class="font-light text-justify text-base mx-2">
+                  <h6 class="text-right">
+                    <span>Depuis avril 2009</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Bali, Indonésie</i></span>
+                  </h6>
+                </div>
+              </div>
+
+              <p class="font-light text-justify text-base sm:mx-2 lg:mx-2">
                 Responsable du développement informatique des agences de
                 tourisme
                 <a target="_blank" href="https://www.unmondeautrement.com"
@@ -308,42 +342,67 @@
                 la maintenance des serveurs dédiés hébergeant les outils du
                 réseau.
               </p>
-              <hr class="mt-4 mb-6" />
+              <div class="mt-4 mb-6 neu-in"></div>
             </div>
+
             <div class="mx-3">
-              <h5 class="ext-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Chef de projet</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <span class="text-cv-accent font-semibold text-xl block"
+                    >Big Foot</span
+                  >
+
+                  Chef de projet
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                / Société Big Foot / Bali Indonésie
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Décembre 2008 - Mars 2009</span>
-              </h6>
-              <p class="font-light text-justify text-base mx-2">
+                  <h6 class="text-right">
+                    <span>Décembre 2008 - Mars 2009</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Bali, Indonésie</i></span>
+                  </h6>
+                </div>
+              </div>
+              <p class="font-light text-justify text-base sm:mx-2 lg:mx-2">
                 Chef de projet, responsable d'une équipe de 4 programmeurs dans
                 le cadre du développement d'un projet de portail B2B pour les
                 hôtels et resorts d'Asie. Analyse et mise en place des
                 différentes étapes du développement et assignation des tâches
                 aux différents membres de l'équipe.
               </p>
-              <hr class="mt-4 mb-6" />
+              <div class="mt-4 mb-6 neu-in"></div>
             </div>
+
             <div class="mx-3">
-              <h5 class="text-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Responsable commercial</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <a href="https://www.kitview.com" target="_blank">
+                    <span class="text-cv-accent font-semibold text-xl block"
+                      >KitView</span
+                    ></a
+                  >
+
+                  Responsable commercial
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                /
-                <a href="https://www.kitview.com" target="_blank">KitView</a> /
-                Strasbourg, France
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Septembre 2007 - novembre 2008</span>
-              </h6>
-              <p class="font-light text-justify text-base mx-2">
+                  <h6 class="text-right">
+                    <span>Septembre 2007 - novembre 2008</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Strasbourg, France</i></span>
+                  </h6>
+                </div>
+              </div>
+
+              <p class="font-light text-justify text-base sm:mx-2 lg:mx-2">
                 Responsable technique et commercial de la région Grand-Est pour
                 la société
                 <a href="https://www.kitview.com" target="_blank"
@@ -356,68 +415,108 @@
                 réseau et participation au développement des différents
                 logiciels de la gamme KitView.
               </p>
-              <hr class="mt-4 mb-6" />
+              <div class="mt-4 mb-6 neu-in"></div>
             </div>
+
             <div class="mx-3">
-              <h5 class="text-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Développeur</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <span class="text-cv-accent font-semibold text-xl block"
+                    >Freelance</span
+                  >
+
+                  Développeur
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                / Freelance / Montréal, Canada
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Novembre 2004 - Juin 2007</span>
-              </h6>
+                  <h6 class="text-right">
+                    <span>Novembre 2004 - Juin 2007</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Montréal, Canada</i></span>
+                  </h6>
+                </div>
+              </div>
+
               <p class="font-light text-justify text-base">
                 Développeur de logiciels et de sites web en freelance.
               </p>
-              <hr class="mt-4 mb-6" />
+              <div class="mt-4 mb-6 neu-in"></div>
             </div>
+
             <div class="mx-3">
-              <h5 class="text-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Développeur Junior</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <a href="https://hal.inria.fr/inria-00100067" target="_blank">
+                    <span class="text-cv-accent font-semibold text-xl block"
+                      >Diatélic</span
+                    ></a
+                  >
+
+                  Développeur Junior
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                / Diatélic / Nancy, France
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Septembre 2003 - Octobre 2004</span>
-              </h6>
-              <p class="font-light text-justify text-base mx-2">
+                  <h6 class="text-right">
+                    <span>Septembre 2003 - Octobre 2004</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Nancy, France</i></span>
+                  </h6>
+                </div>
+              </div>
+
+              <p class="font-light text-justify text-base sm:mx-2 lg:mx-2">
                 Chargé du développement d'un logiciel de gestion de planning
                 pour le service de néphrologie du CHU de Brabois. Développement
                 du site web de la société Diatélic, précurseuse dans la
                 télémédecine et la création de systèmes intelligents pour le
                 suivi de patients atteints d'insuffisance rénale.
               </p>
-              <hr class="mt-4 mb-6" />
+              <div class="mt-4 mb-6 neu-in"></div>
             </div>
+
             <div class="mx-3">
-              <h5 class="text-base mx-3">
-                <span class="text-cv-accent font-semibold text-xl"
-                  >Administrateur Réseau</span
+              <div
+                class="flex justify-between flex-col sm:flex-row lg:flex-row align-bottom mb-1"
+              >
+                <h5 class="text-base">
+                  <span class="text-cv-accent font-semibold text-xl block"
+                    >Qualipse</span
+                  >
+
+                  Administrateur Réseau
+                </h5>
+                <div
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
                 >
-                / Qualipse / Strasbourg, France
-              </h5>
-              <h6 class="text-gray-600 font-light mb-2 ml-4">
-                <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Septembre 2001 - Juillet 2003</span>
-              </h6>
-              <p class="font-light text-justify text-base mx-2">
+                  <h6 class="text-right">
+                    <span>Septembre 2001 - Juillet 2003</span>
+                  </h6>
+                  <h6 class="text-sm text-right">
+                    <span><i>Strasbourg, France</i></span>
+                  </h6>
+                </div>
+              </div>
+              <p class="font-light text-justify text-base sm:mx-2 lg:mx-2">
                 Responsable réseau dans le cadre d'études en alternance en BTS
                 informatique de gestion.
               </p>
             </div>
           </div>
 
-          <div class="mt-20 lg:mt-12">
+          <div class="mt-20">
             <h2
-              class="text-3xl bg-gray-300 shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
+              class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
-              ><span class="text-2xl">Diplômes</span>
+              ><span class="text-md sm:text-xl lg:text-2xl">Diplômes</span>
             </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base">
@@ -503,6 +602,11 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+.bg-main {
+  background-color: var(--bg-color) 0;
+}
+
 body {
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -631,23 +735,36 @@ body {
     12px -12px 16px 0 rgba(255, 255, 255, 0.4);
 }
 
+.neu-in {
+  padding: 0.1rem;
+  color: var(--bg-color);
+  background: var(--bg-color);
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, 0.2),
+    inset -1px -1px 1px 0 rgba(255, 255, 255, 0.6);
+}
+
 .social-link {
-  --bg-color: attr(data-color);
   margin: 0.5rem 1rem;
   position: relative;
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  padding: 0.65rem;
-  background: #e2e8f0;
+  padding: 0.6rem;
+  background: var(--bg-color);
   perspective: 1500px;
 
   -webkit-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
   box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7),
     5px 5px 10px rgba(0, 0, 0, 0.2);
-
+  @media (min-width: 640px) and (max-width: 1023px) {
+    width: 30px;
+    height: 30px;
+    padding: 0.3rem;
+    margin: 0 1rem;
+  }
   svg {
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;

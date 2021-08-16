@@ -5,9 +5,13 @@
 </template>
 
 <style>
+:root {
+  --bg-color: #e0e0e0;
+}
+
 html,
 body {
-  @apply bg-gray-300;
+  background-color: var(--bg-color);
   color: #212529;
 }
 </style>
