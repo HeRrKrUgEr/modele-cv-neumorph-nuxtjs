@@ -10,7 +10,7 @@
         >
           <div
             id=""
-            class="id-card w-full flex flex-col justify-center align-middle overflow-hidden"
+            class="id-card w-full flex flex-col justify-center align-middle overflow-hidden neu-inset rounded-lg"
           >
             <img
               class="absolute bottom-0 left-0 -ml-12"
@@ -733,6 +733,15 @@ body {
 .neu-right {
   box-shadow: -8px 8px 12px 0 rgba(0, 0, 0, 0.2),
     12px -12px 16px 0 rgba(255, 255, 255, 0.4);
+}
+
+.neu-inset {
+  padding: 0.5rem;
+
+  background: var(--bg-color);
+
+  box-shadow: inset 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    inset -10px -8px 16px 0 rgba(255, 255, 255, 0.5);
 }
 
 .neu-in {
