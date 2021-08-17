@@ -294,7 +294,7 @@
               class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
-              ><span class="text-md sm:text-xl lg:text-2xl"
+              ><span class="text-base sm:text-xl lg:text-2xl"
                 >Expérience professionnelle</span
               >
             </h2>
@@ -313,7 +313,7 @@
                   Directeur technique
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
                     <span>Depuis avril 2009</span>
@@ -357,10 +357,10 @@
                   Chef de projet
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
-                    <span>Décembre 2008 - Mars 2009</span>
+                    <span>Déc. 2008 - Mars 2009</span>
                   </h6>
                   <h6 class="text-sm text-right">
                     <span><i>Bali, Indonésie</i></span>
@@ -391,10 +391,10 @@
                   Responsable commercial
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
-                    <span>Septembre 2007 - novembre 2008</span>
+                    <span>Sep. 2007 - Nov. 2008</span>
                   </h6>
                   <h6 class="text-sm text-right">
                     <span><i>Strasbourg, France</i></span>
@@ -430,10 +430,10 @@
                   Développeur
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
-                    <span>Novembre 2004 - Juin 2007</span>
+                    <span>Nov. 2004 - Juin 2007</span>
                   </h6>
                   <h6 class="text-sm text-right">
                     <span><i>Montréal, Canada</i></span>
@@ -461,10 +461,10 @@
                   Développeur Junior
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
-                    <span>Septembre 2003 - Octobre 2004</span>
+                    <span>Sep. 2003 - Oct. 2004</span>
                   </h6>
                   <h6 class="text-sm text-right">
                     <span><i>Nancy, France</i></span>
@@ -494,10 +494,10 @@
                   Administrateur Réseau
                 </h5>
                 <div
-                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end mx-2 text-gray-600"
+                  class="flex flex-row sm:flex-col lg:flex-col justify-between sm:justify-end lg:justify-end lg:mx-2 text-gray-600"
                 >
                   <h6 class="text-right">
-                    <span>Septembre 2001 - Juillet 2003</span>
+                    <span>Sep. 2001 - Juil. 2003</span>
                   </h6>
                   <h6 class="text-sm text-right">
                     <span><i>Strasbourg, France</i></span>
@@ -516,7 +516,7 @@
               class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
-              ><span class="text-md sm:text-xl lg:text-2xl">Diplômes</span>
+              ><span class="text-sm sm:text-xl lg:text-2xl">Diplômes</span>
             </h2>
             <div class="mx-3 mt-10">
               <h5 class="text-base">
@@ -527,7 +527,7 @@
               </h5>
               <h6 class="text-gray-600 font-light mb-2 ml-4">
                 <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Septembre 2001 à Juillet 2003</span>
+                ><span>Obtenu en juillet 2003</span>
               </h6>
               <hr class="my-6" />
             </div>
@@ -540,7 +540,7 @@
               </h5>
               <h6 class="text-gray-600 font-light mb-2 ml-4">
                 <fa :icon="['fal', 'calendar']" class="fa-fw mr-2"></fa
-                ><span>Année 2000</span>
+                ><span>Obtenu en juillet 2000</span>
               </h6>
             </div>
           </div>
@@ -569,15 +569,14 @@ export default {
   computed: {
     coords() {
       return {
-        ax: -(this.windowWidth / 2 - this.x) / 20,
-        ay: (this.windowHeight / 2 - this.y) / 10,
+        ax: -(this.windowWidth / 2 - this.x) / 40,
+        ay: (this.windowHeight / 2 - this.y) / 20,
       }
     },
     age() {
       let date1 = new Date()
       date1.setHours(0, 0, 0, 0)
       let date2 = new Date(1980, 7, 14)
-      console.log(date2 + ' ' + date1)
       let yearsDiff = Math.floor((date1 - date2) / 1000 / 3600 / 24 / 365)
       return yearsDiff
     },
@@ -604,7 +603,7 @@ export default {
 */
 
 .bg-main {
-  background-color: var(--bg-color) 0;
+  background-color: var(--bg-color);
 }
 
 body {

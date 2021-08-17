@@ -14,4 +14,9 @@ body {
   background-color: var(--bg-color);
   color: #212529;
 }
+
+body {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
 </style>
