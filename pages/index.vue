@@ -249,37 +249,28 @@
             </div>
             <div>
               <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset mb-4"
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset mb-5"
               >
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
               </div>
               <div class="px-2 lg:px-8 pb-8">
                 <p
-                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                  class="inline-block mx-3 pl-3 pr-4 py-1 text-cv-accent neu-sm text-center"
                 >
-                  <fa
-                    :icon="['fal', 'golfclub']"
-                    class="fa-fw mr-2 text-white"
-                  ></fa
+                  <fa :icon="['fal', 'golfclub']" class="fa-fw mr-2"></fa
                   ><span class="text-base font-medium">Golf</span>
                 </p>
                 <p
-                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                  class="inline-block mx-3 pl-3 pr-4 py-1 text-cv-accent neu-sm m text-center"
                 >
-                  <fa
-                    :icon="['fal', 'piano']"
-                    class="fa-fw mr-2 text-white"
-                  ></fa
+                  <fa :icon="['fal', 'piano']" class="fa-fw mr-2"></fa
                   ><span class="text-base font-medium">Piano</span>
                 </p>
                 <p
-                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                  class="inline-block mx-3 pl-3 pr-4 py-1 text-cv-accent neu-sm text-center"
                 >
-                  <fa
-                    :icon="['fal', 'laptop']"
-                    class="fa-fw mr-2 text-white"
-                  ></fa
+                  <fa :icon="['fal', 'laptop']" class="fa-fw mr-2"></fa
                   ><span class="text-base font-medium">Dev</span>
                 </p>
               </div>
@@ -732,9 +723,10 @@ body {
     -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
-.neu-right {
-  box-shadow: -8px 8px 12px 0 rgba(0, 0, 0, 0.2),
-    12px -12px 16px 0 rgba(255, 255, 255, 0.4);
+.neu-sm {
+  border-radius: 15px;
+  background: var(--bg-color);
+  box-shadow: 2px 2px 5px rgba(136, 165, 191, 0.48), -2px -2px 5px #ffffff;
 }
 
 .neu-inset {
