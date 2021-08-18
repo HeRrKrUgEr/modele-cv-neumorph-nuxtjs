@@ -6,7 +6,7 @@
 
 <style>
 :root {
-  --bg-color: #e0e0e0;
+  --bg-color: #e0e5ec;
 }
 
 html,

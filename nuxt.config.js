@@ -71,6 +71,7 @@ export default {
               'faFilePdf',
               'faInfo',
               'faCloudDownload',
+              'faComputer',
             ],
           },
           {

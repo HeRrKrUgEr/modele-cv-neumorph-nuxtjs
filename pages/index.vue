@@ -5,12 +5,10 @@
       <!-- The Grid -->
       <div class="grid grid-cols-3 lg:gap-8">
         <!-- Left Column -->
-        <div
-          class="col-span-3 lg:col-span-1 h-full bg-main neu-left rounded-lg"
-        >
+        <div class="col-span-3 lg:col-span-1 h-full bg-main neu-left">
           <div
             id=""
-            class="id-card w-full flex flex-col justify-center align-middle overflow-hidden neu-inset rounded-lg"
+            class="id-card w-full flex flex-col justify-center align-middle overflow-hidden neu-inset"
           >
             <img
               class="absolute bottom-0 left-0 -ml-12"
@@ -234,7 +232,10 @@
               <div
                 class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
               >
-                <fa :icon="['fal', 'globe']" class="fa-fw mr-3"></fa
+                <fa
+                  :icon="['fal', 'globe']"
+                  class="fa-fw mr-3 fa-swap-opacity"
+                ></fa
                 ><span class="text-lg">Langues étrangères</span>
               </div>
               <div class="px-2 lg:px-8">
@@ -278,6 +279,15 @@
                   ></fa
                   ><span class="text-base font-medium">Piano</span>
                 </p>
+                <p
+                  class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
+                >
+                  <fa
+                    :icon="['fal', 'computer']"
+                    class="fa-fw mr-2 text-white"
+                  ></fa
+                  ><span class="text-base font-medium">Dev</span>
+                </p>
               </div>
             </div>
           </div>
@@ -286,12 +296,10 @@
         </div>
 
         <!-- Right Column -->
-        <div
-          class="col-span-3 lg:col-span-2 bg-main xl:p-4 xl:rounded-md neu-left"
-        >
+        <div class="col-span-3 lg:col-span-2 bg-main xl:p-4 neu-left">
           <div class="mt-20 lg:mt-0">
             <h2
-              class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
+              class="text-3xl bg-main neu-inset rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'briefcase']" class="fa-fw mr-3"></fa
               ><span class="text-base sm:text-xl lg:text-2xl"
@@ -513,7 +521,7 @@
 
           <div class="mt-20">
             <h2
-              class="text-3xl bg-main shadow-neumorph-md rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
+              class="text-3xl bg-main neu-inset rounded-md uppercase tracking-wide font-medium py-3 px-4 text-cv-accent"
             >
               <fa :icon="['fal', 'graduationcap']" class="fa-fw mr-3"></fa
               ><span class="text-sm sm:text-xl lg:text-2xl">Diplômes</span>
@@ -725,8 +733,9 @@ body {
 }
 
 .neu-left {
-  box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.2),
-    -12px -12px 20px 0 rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 .neu-right {
@@ -735,12 +744,13 @@ body {
 }
 
 .neu-inset {
-  padding: 0.5rem;
+  border-radius: 25px;
+  padding: 0.3rem 1rem;
 
   background: var(--bg-color);
 
-  box-shadow: inset 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    inset -10px -8px 16px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+    inset -3px -3px 7px #ffffff;
 }
 
 .neu-in {
@@ -765,8 +775,7 @@ body {
 
   -webkit-transition: box-shadow 0.2s linear;
   transition: box-shadow 0.2s linear;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.7),
-    5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 7px rgba(136, 165, 191, 0.48), -3px -3px 7px #ffffff;
   @media (min-width: 640px) and (max-width: 1023px) {
     width: 30px;
     height: 30px;
@@ -804,17 +813,17 @@ body {
   }
   &:hover {
     box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.7),
-      1px 1px 2px rgba(0, 0, 0, 0.2);
+      1px 1px 2px rgba(136, 165, 191, 0.54);
     svg {
       opacity: 1;
       transform: translateY(1px);
     }
   }
   &:active {
-    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.7),
-      inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+      inset -3px -3px 7px #ffffff;
     svg {
-      transform: scale(0.95) translateY(2px);
+      transform: scale(0.95) translateY(1px);
       opacity: 0.8;
     }
   }
