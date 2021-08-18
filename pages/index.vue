@@ -25,7 +25,7 @@
           <div class="overflow-hidden relative z-10 flex flex-col flex-between">
             <div>
               <div
-                class="text-2xl text-cv-accent bg-main px-2 uppercase tracking-wide font-semibold mt-2 shadow-neumorph-sm"
+                class="text-2xl text-cv-accent bg-main px-2 uppercase tracking-wide font-semibold mt-2 neu-inset"
               >
                 <fa :icon="['fal', 'info']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Informations</span>
@@ -156,7 +156,7 @@
             </div>
             <div>
               <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset"
               >
                 <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
                 ><span class="text-lg">Compétences techniques</span>
@@ -195,26 +195,10 @@
             </div>
             <div>
               <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset"
               >
-                <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
-                ><span class="text-lg">Frameworks et CMS</span>
-              </div>
-              <div
-                class="grid grid-cols-6 gap-3 mt-4 justify-center px-2 lg:px-4"
-              >
-                <div class=""><img src="img/mnet.png" /></div>
-                <div class=""><img src="img/vuejs.png" /></div>
-                <div class=""><img src="img/tailwind.png" /></div>
-                <div class=""><img src="img/bootstrap.png" /></div>
-                <div class=""><img src="img/laravel.png" /></div>
-                <div class=""><img src="img/wordpress.png" /></div>
-              </div>
-              <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-10 px-2 shadow-neumorph-sm"
-              >
-                <fa :icon="['fal', 'cog']" class="fa-fw mr-3"></fa
-                ><span class="text-lg">Langages informatiques</span>
+                <fa :icon="['fal', 'laptop-code']" class="fa-fw mr-3"></fa
+                ><span class="text-lg">Langages et Frameworks</span>
               </div>
               <div
                 class="grid grid-cols-7 gap-3 mt-6 justify-center px-2 lg:px-4"
@@ -227,10 +211,20 @@
                 <div class=""><img src="img/csharp.png" /></div>
                 <div class=""><img src="img/python.png" /></div>
               </div>
+              <div
+                class="grid grid-cols-6 gap-3 mt-4 justify-center px-2 lg:px-4"
+              >
+                <div class=""><img src="img/mnet.png" /></div>
+                <div class=""><img src="img/laravel.png" /></div>
+                <div class=""><img src="img/vuejs.png" /></div>
+                <div class=""><img src="img/gcloud.png" /></div>
+                <div class=""><img src="img/iis.png" /></div>
+                <div class=""><img src="img/apache.png" /></div>
+              </div>
             </div>
             <div>
               <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm"
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset"
               >
                 <fa
                   :icon="['fal', 'globe']"
@@ -255,7 +249,7 @@
             </div>
             <div>
               <div
-                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 shadow-neumorph-sm mb-4"
+                class="text-2xl text-cv-accent uppercase tracking-wide font-semibold mt-16 px-2 neu-inset mb-4"
               >
                 <fa :icon="['fal', 'golfball']" class="fa-fw mr-3"></fa
                 ><span class="text-base">Hobbies</span>
@@ -283,7 +277,7 @@
                   class="inline-block mx-3 pl-3 pr-4 py-1 bg-cv-accent text-white rounded-xl text-center"
                 >
                   <fa
-                    :icon="['fal', 'computer']"
+                    :icon="['fal', 'laptop']"
                     class="fa-fw mr-2 text-white"
                   ></fa
                   ><span class="text-base font-medium">Dev</span>

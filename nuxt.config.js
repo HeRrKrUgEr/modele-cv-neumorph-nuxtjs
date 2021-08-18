@@ -72,6 +72,9 @@ export default {
               'faInfo',
               'faCloudDownload',
               'faComputer',
+              'faLaptop',
+              'faLaptopSlash',
+              'faLaptopCode',
             ],
           },
           {
