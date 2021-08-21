@@ -22,12 +22,11 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '"Open Sans"',
+        '"Roboto"',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
-        'Roboto',
         '"Helvetica Neue"',
         'Arial',
         '"Noto Sans"',
