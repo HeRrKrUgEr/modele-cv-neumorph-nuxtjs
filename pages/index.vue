@@ -651,7 +651,7 @@ body {
     //filter: drop-shadow(-2px 6px 6px rgba(0, 0, 0, 1));
     -webkit-filter: blur(50px);
     filter: blur(50px);
-    animation: 2s linear 1s forwards unblur;
+    animation: 2s linear 1.6s forwards unblur;
   }
 
   h1 {
@@ -728,8 +728,9 @@ body {
 
 .neu-left {
   border-radius: 25px;
-  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
-    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);*/
+  animation: 2s linear 1.2s forwards mainShadows;
 }
 
 .neu-sm {
@@ -742,10 +743,9 @@ body {
   padding: 0.3rem 1rem;
 
   background: var(--bg-color);
-
-  box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
-    inset -3px -3px 7px #ffffff;
-
+  animation: 2s linear 1.4s forwards inShadows;
+  /*box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+    inset -3px -3px 7px #ffffff;*/
   @media (min-width: 640px) {
     border-radius: 25px;
   }
@@ -875,6 +875,66 @@ body {
   100% {
     filter: drop-shadow(12px 12px 16px rgba(0, 0, 0, 0.7))
       drop-shadow(-8px -8px 12px rgba(255, 255, 255, 0.4)) blur(0);
+  }
+}
+
+@-webkit-keyframes mainShadows {
+  0% {
+    -webkit-box-shadow: 0px 0px 6px rgba(163, 177, 198, 0),
+      0px 0px 0px rgba(255, 255, 255, 0);
+  }
+  75% {
+    -webkit-box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.3),
+      -4px -4px 8px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    -webkit-box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes mainShadows {
+  0% {
+    box-shadow: 9px 9px 16px rgba(37, 48, 65, 0),
+      -9px -9px 16px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 9px 9px 16px rgba(37, 48, 65, 0),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@-webkit-keyframes inShadows {
+  0% {
+    -webkit-box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0),
+      inset -3px -3px 7px rgba(255, 255, 255, 0);
+  }
+  50% {
+    -webkit-box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0),
+      inset -3px -3px 7px rgba(255, 255, 255, 1);
+  }
+  100% {
+    -webkit-box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+      inset -3px -3px 7px rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes inShadows {
+  0% {
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0),
+      inset -3px -3px 7px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0),
+      inset -3px -3px 7px rgba(255, 255, 255, 1);
+  }
+  100% {
+    box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+      inset -3px -3px 7px rgba(255, 255, 255, 1);
   }
 }
 </style>
