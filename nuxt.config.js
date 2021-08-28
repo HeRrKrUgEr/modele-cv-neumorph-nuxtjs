@@ -16,7 +16,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet',
+        rel: 'preload',
+        as: 'style',
         href:
           'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap',
       },
@@ -31,6 +32,8 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+
+  loading: '~/components/LoadingBar.vue',
 
   purgeCSS: {
     whitelistPatterns: [/svg.*/, /fa.*/, /w-1*/, /slick*/, /vue-map*/],

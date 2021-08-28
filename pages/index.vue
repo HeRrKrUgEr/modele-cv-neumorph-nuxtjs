@@ -541,7 +541,9 @@
 </template>
 
 <script>
+import LoadingBar from '~/components/LoadingBar.vue'
 export default {
+  components: { LoadingBar },
   data() {
     return {
       x: 0,
