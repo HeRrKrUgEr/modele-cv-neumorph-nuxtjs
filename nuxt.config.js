@@ -41,6 +41,12 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     'nuxt-gsap-module',
     '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-206135414-1',
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
