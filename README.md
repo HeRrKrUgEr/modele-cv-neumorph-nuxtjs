@@ -1,5 +1,7 @@
 # MyCV
 
+Un template de CV simple construit avec Nuxt.js et TailwindCss et inspiré des normes du neumorphisme pour le design.
+
 ## Build Setup
 
 ```bash
