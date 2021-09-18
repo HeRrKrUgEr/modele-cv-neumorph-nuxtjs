@@ -1,6 +1,6 @@
 # MyCV
 
-Un template de CV simple construit avec Nuxt.js et TailwindCss et inspiré des normes du neumorphisme pour le design.
+Un template de CV simple pour developpeur ou tout autre profil... construit avec Nuxt.js et TailwindCss et inspiré du neumorphisme pour le design.
 
 ## Build Setup
 
