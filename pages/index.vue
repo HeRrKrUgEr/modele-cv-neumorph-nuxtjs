@@ -51,7 +51,7 @@
                   </svg>
                 </a>
                 <a
-                  href="https://github.com/HeRrKrUgEr"
+                  href="https://github.com/HeRrKrUgEr/modele-cv-neumorph-nuxtjs"
                   target="_blank"
                   title="github"
                   role="button"
