@@ -105,7 +105,7 @@
                   class="mb-4 w-full sm:w-1/2 inline-flex justify-start sm:justify-center"
                 >
                   <a
-                    href="mailto:vchanliau@gmail.com"
+                    href="mailto:vincent@chanliau.com"
                     class="fa-link text-lg align-middle"
                   >
                     <fa
@@ -113,7 +113,7 @@
                       class="fa-fw mr-3 text-cv-accent text-2xl"
                     ></fa>
 
-                    <span class="text-base">vchanliau@gmail.com</span></a
+                    <span class="text-base">vincent@chanliau.com</span></a
                   >
                 </div>
                 <div
